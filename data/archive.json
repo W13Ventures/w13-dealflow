@@ -1,0 +1,104 @@
+[
+  {
+    "date": "2026-04-04",
+    "verdict": "MONITOR(3)",
+    "signals": [
+      {
+        "name": "koog",
+        "source": "github",
+        "scores": {
+          "mkt": 8.6,
+          "agt": 7.2,
+          "rev": 4.4,
+          "tkn": 3,
+          "wht": 5.5,
+          "edg": 9.8
+        },
+        "avg": 6.42,
+        "url": "https://github.com/JetBrains/koog",
+        "desc": "Koog is a JVM (Java and Kotlin) framework for building predictable, fault-tolera"
+      },
+      {
+        "name": "voltagent",
+        "source": "github",
+        "scores": {
+          "mkt": 4.4,
+          "agt": 7.2,
+          "rev": 3,
+          "tkn": 3,
+          "wht": 6.9,
+          "edg": 9.8
+        },
+        "avg": 5.72,
+        "url": "https://github.com/VoltAgent/voltagent",
+        "desc": "AI Agent Engineering Platform built on an Open Source TypeScript AI Agent Framew"
+      },
+      {
+        "name": "ruflo",
+        "source": "github",
+        "scores": {
+          "mkt": 7.2,
+          "agt": 8.6,
+          "rev": 3,
+          "tkn": 3,
+          "wht": 5.5,
+          "edg": 7
+        },
+        "avg": 5.72,
+        "url": "https://github.com/ruvnet/ruflo",
+        "desc": "🌊 The leading agent orchestration platform for Claude. Deploy intelligent multi-"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-03",
+    "verdict": "MONITOR(3)",
+    "signals": [
+      {
+        "name": "koog",
+        "source": "github",
+        "scores": {
+          "mkt": 8.6,
+          "agt": 7.2,
+          "rev": 4.4,
+          "tkn": 3,
+          "wht": 5.5,
+          "edg": 9.8
+        },
+        "avg": 6.42,
+        "url": "https://github.com/JetBrains/koog",
+        "desc": "Koog is a JVM (Java and Kotlin) framework for building predictable, fault-tolera"
+      },
+      {
+        "name": "voltagent",
+        "source": "github",
+        "scores": {
+          "mkt": 4.4,
+          "agt": 7.2,
+          "rev": 3,
+          "tkn": 3,
+          "wht": 6.9,
+          "edg": 9.8
+        },
+        "avg": 5.72,
+        "url": "https://github.com/VoltAgent/voltagent",
+        "desc": "AI Agent Engineering Platform built on an Open Source TypeScript AI Agent Framew"
+      },
+      {
+        "name": "ruflo",
+        "source": "github",
+        "scores": {
+          "mkt": 7.2,
+          "agt": 8.6,
+          "rev": 3,
+          "tkn": 3,
+          "wht": 5.5,
+          "edg": 7
+        },
+        "avg": 5.72,
+        "url": "https://github.com/ruvnet/ruflo",
+        "desc": "🌊 The leading agent orchestration platform for Claude. Deploy intelligent multi-"
+      }
+    ]
+  }
+]
