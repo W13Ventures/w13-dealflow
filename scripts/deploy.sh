@@ -18,13 +18,13 @@ cd "$SITE_DIR"
 node scripts/export_data.js > /dev/null 2>&1
 
 # 3. Commit + push (pushes to gh-pages if on main, or just commits)
-git add data/today.json data/archive.json index.html
+git add public/data/today.json public/data/archive.json index.html
 if git diff --cached --quiet; then
     echo "[DEPLOY] No data changes — skipping push"
 else
     git commit -m "W13 Dealflow $(date '+%Y-%m-%d') — auto-deploy"
     export GH_TOKEN=$(cat "$GH_TOKEN_FILE")
-    export GITHUB_TOKEN=$GH_TOKEN
+    export GITHUB_TOKEN=$(cat "$GH_TOKEN_FILE")
     git push origin gh-pages 2>&1 | tail -2
     echo "[DEPLOY] Pushed to GitHub Pages"
 fi

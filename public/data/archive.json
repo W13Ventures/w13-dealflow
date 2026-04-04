@@ -106,97 +106,6 @@
         "desc": "Fast, small, and fully autonomous AI personal assistant infrastructure, ANY OS,"
       },
       {
-        "name": "voltagent",
-        "source": "github",
-        "scores": {
-          "trc": 9.2,
-          "ths": 5.2,
-          "edge": 5.8
-        },
-        "avg": 6.73,
-        "verdict": "INVEST",
-        "url": "https://github.com/VoltAgent/voltagent",
-        "desc": "AI Agent Engineering Platform built on an Open Source TypeScript AI Agent Framew"
-      },
-      {
-        "name": "Open-AutoGLM",
-        "source": "github",
-        "scores": {
-          "trc": 9.4,
-          "ths": 6.1,
-          "edge": 4.6
-        },
-        "avg": 6.7,
-        "verdict": "INVEST",
-        "url": "https://github.com/zai-org/Open-AutoGLM",
-        "desc": "An Open Phone Agent Model & Framework. Unlocking the AI Phone for Everyone"
-      },
-      {
-        "name": "WeKnora",
-        "source": "github",
-        "scores": {
-          "trc": 9.4,
-          "ths": 6.1,
-          "edge": 4.6
-        },
-        "avg": 6.7,
-        "verdict": "INVEST",
-        "url": "https://github.com/Tencent/WeKnora",
-        "desc": "LLM-powered framework for deep document understanding, semantic retrieval, and c"
-      },
-      {
-        "name": "osaurus",
-        "source": "github",
-        "scores": {
-          "trc": 7.4,
-          "ths": 7.9,
-          "edge": 4.6
-        },
-        "avg": 6.63,
-        "verdict": "INVEST",
-        "url": "https://github.com/osaurus-ai/osaurus",
-        "desc": "Own your AI. The native macOS harness for AI agents -- any model, persistent mem"
-      },
-      {
-        "name": "12-factor-agents",
-        "source": "github",
-        "scores": {
-          "trc": 10,
-          "ths": 5.2,
-          "edge": 4.6
-        },
-        "avg": 6.6,
-        "verdict": "INVEST",
-        "url": "https://github.com/humanlayer/12-factor-agents",
-        "desc": "What are the principles we can use to build LLM-powered software that is actuall"
-      },
-      {
-        "name": "ii-agent",
-        "source": "github",
-        "scores": {
-          "trc": 8.2,
-          "ths": 5.2,
-          "edge": 5.8
-        },
-        "avg": 6.4,
-        "verdict": "INVEST",
-        "url": "https://github.com/Intelligent-Internet/ii-agent",
-        "desc": "II-Agent: a new open-source framework to build and deploy intelligent agents"
-      },
-      {
-        "name": "apple-docs-mcp",
-        "source": "github",
-        "scores": {
-          "trc": 8.2,
-          "ths": 5.2,
-          "edge": 5.8
-        },
-        "avg": 6.4,
-        "verdict": "INVEST",
-        "url": "https://github.com/kimsungwhee/apple-docs-mcp",
-        "desc": "MCP server for Apple Developer Documentation - Search iOS/macOS/SwiftUI/UIKit do"
-      },
-      {
         "name": "OpenShell",
         "source": "github",
         "scores": {
@@ -249,6 +158,19 @@
         "desc": "Seamless integration between Claude Code AI assistant and Neovim"
       },
       {
+        "name": "Show HN: sllm – Split a GPU node with othe",
+        "source": "hackernews",
+        "scores": {
+          "trc": 5,
+          "ths": 7.2,
+          "edge": 4
+        },
+        "avg": 5.4,
+        "verdict": "MONITOR",
+        "url": "https://sllm.cloud",
+        "desc": "Show HN by jrandolf: Show HN: sllm – Split a GPU node with other developers, unl"
+      },
+      {
         "name": "OpenSpec",
         "source": "github",
         "scores": {
@@ -260,71 +182,6 @@
         "verdict": "MONITOR",
         "url": "https://github.com/Fission-AI/OpenSpec",
         "desc": "Spec-driven development (SDD) for AI coding assistants."
-      },
-      {
-        "name": "zclaw",
-        "source": "github",
-        "scores": {
-          "trc": 7.8,
-          "ths": 3,
-          "edge": 5.2
-        },
-        "avg": 5.33,
-        "verdict": "MONITOR",
-        "url": "https://github.com/tnm/zclaw",
-        "desc": "Your personal AI assistant at all-in 888KiB (~35KB in app code). Running on an E"
-      },
-      {
-        "name": "Show HN: sllm – Split a GPU node with othe",
-        "source": "hackernews",
-        "scores": {
-          "trc": 4,
-          "ths": 7.2,
-          "edge": 4
-        },
-        "avg": 5.07,
-        "verdict": "MONITOR",
-        "url": "https://sllm.cloud",
-        "desc": "Show HN by jrandolf: Show HN: sllm – Split a GPU node with other developers, unl"
-      },
-      {
-        "name": "Show HN: Apfel – The free AI already on yo",
-        "source": "hackernews",
-        "scores": {
-          "trc": 8,
-          "ths": 3,
-          "edge": 4
-        },
-        "avg": 5,
-        "verdict": "MONITOR",
-        "url": "https://apfel.franzai.com",
-        "desc": "Show HN by franze: Show HN: Apfel – The free AI already on your Mac"
-      },
-      {
-        "name": "Show HN: Travel Hacking Toolkit – Points s",
-        "source": "hackernews",
-        "scores": {
-          "trc": 6.4,
-          "ths": 3.9,
-          "edge": 4.6
-        },
-        "avg": 4.97,
-        "verdict": "MONITOR",
-        "url": "https://github.com/borski/travel-hacking-toolkit",
-        "desc": "Show HN by borski: Show HN: Travel Hacking Toolkit – Points search and trip plan"
-      },
-      {
-        "name": "Show HN: Tokencap – Token budget enforceme",
-        "source": "hackernews",
-        "scores": {
-          "trc": 4,
-          "ths": 6.3,
-          "edge": 4
-        },
-        "avg": 4.77,
-        "verdict": "MONITOR",
-        "url": "https://github.com/pykul/tokencap",
-        "desc": "Show HN by pykul: Show HN: Tokencap – Token budget enforcement across your AI ag"
       }
     ]
   }
