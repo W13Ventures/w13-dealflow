@@ -17,7 +17,7 @@
       --muted:    #5A6072;
       --accent:   #9945FF;
       --accent2:  #14F195;
-      --build:    #14F195;
+      --invest:   #14F195;
       --monitor:  #F5A623;
       --pass:     #5A6072;
       --red:      #FF4D4D;
@@ -47,12 +47,10 @@
       font-size: 16px;
       letter-spacing: -0.5px;
     }
-    .site-header .tagline {
-      color: var(--muted);
-    }
+    .site-header .tagline { color: var(--muted); }
     .site-header .live-dot {
       width: 6px; height: 6px;
-      background: var(--build);
+      background: var(--invest);
       border-radius: 50%;
       margin-left: auto;
       animation: pulse 2s infinite;
@@ -110,10 +108,7 @@
       border: none;
       transition: all 0.15s;
     }
-    .btn-primary {
-      background: var(--accent);
-      color: #fff;
-    }
+    .btn-primary { background: var(--accent); color: #fff; }
     .btn-primary:hover { background: #b56fff; transform: translateY(-1px); }
     .btn-outline {
       background: transparent;
@@ -153,7 +148,7 @@
       border-radius: 4px;
       font-weight: 600;
     }
-    .badge-build  { background: rgba(20,241,149,0.12); color: var(--build); }
+    .badge-invest  { background: rgba(20,241,149,0.12); color: var(--invest); }
     .badge-monitor { background: rgba(245,166,35,0.12); color: var(--monitor); }
 
     /* Signal card */
@@ -173,7 +168,7 @@
       width: 3px;
       background: var(--border);
     }
-    .signal-card.build::before  { background: var(--build); }
+    .signal-card.invest::before  { background: var(--invest); }
     .signal-card.monitor::before { background: var(--monitor); }
 
     .signal-header {
@@ -203,16 +198,16 @@
       margin-bottom: 12px;
     }
 
-    /* Score grid */
+    /* Score grid — 3 dimensions */
     .score-grid {
       display: grid;
-      grid-template-columns: repeat(6, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 8px;
       margin-top: 12px;
     }
     .score-cell {
       text-align: center;
-      padding: 6px 4px;
+      padding: 8px 4px;
       background: rgba(255,255,255,0.03);
       border-radius: 4px;
     }
@@ -223,17 +218,16 @@
       letter-spacing: 1px;
       text-transform: uppercase;
       display: block;
-      margin-bottom: 2px;
+      margin-bottom: 4px;
     }
     .score-value {
       font-family: 'JetBrains Mono', monospace;
-      font-size: 14px;
+      font-size: 16px;
       font-weight: 700;
       color: #FFFFFF;
       display: block;
     }
-    .score-value.avg { color: var(--accent); font-size: 18px; }
-    .score-value.high { color: var(--build); }
+    .score-value.avg { color: var(--accent); font-size: 20px; }
 
     /* ── TIERED ACCESS ───────────────────────────────────────────────── */
     .tier-gate {
@@ -266,6 +260,36 @@
       color: var(--muted);
     }
     .tier-unlock .btn { font-size: 13px; padding: 10px 20px; }
+
+    /* ── Stats bar ────────────────────────────────────────────────────── */
+    .stats-bar {
+      display: flex;
+      gap: 32px;
+      margin-top: 32px;
+      padding: 20px 24px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+    .stat {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .stat-num {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 24px;
+      font-weight: 700;
+      color: #fff;
+    }
+    .stat-num.invest { color: var(--invest); }
+    .stat-num.monitor { color: var(--monitor); }
+    .stat-label {
+      font-size: 11px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
 
     /* ── HOW IT WORKS ────────────────────────────────────────────────── */
     .how-grid {
@@ -451,9 +475,10 @@
       .site-header { padding: 12px 16px; }
       .section { padding: 40px 0; }
       .how-grid, .pricing-grid { grid-template-columns: 1fr; }
-      .score-grid { grid-template-columns: repeat(3, 1fr); }
+      .score-grid { grid-template-columns: repeat(2, 1fr); }
       .waitlist-form { flex-direction: column; }
       .hero { padding: 50px 0 40px; }
+      .stats-bar { flex-wrap: wrap; gap: 16px; }
     }
   </style>
 </head>
@@ -471,8 +496,8 @@
 <section class="hero">
   <div class="container">
     <div class="hero-eyebrow">W13 Venture Studio</div>
-    <h1>Daily intelligence on<br><span>early-stage AI x crypto</span></h1>
-    <p class="hero-sub">Every signal scored against a 6-dimension rubric. Every decision logged. Every verdict delivered to your inbox. The compounding dealflow database that gets smarter every day.</p>
+    <h1>Daily intelligence on<br><span>Crypto, Decentralized AI & AI</span></h1>
+    <p class="hero-sub">Every signal scored. Every verdict logged. Every day. The compounding dealflow database that helps W13 get into the best early-stage deals — before anyone else.</p>
     <div class="hero-actions">
       <a href="#waitlist" class="btn btn-primary">Join the Waitlist →</a>
       <a href="#how-it-works" class="btn btn-outline">How it works</a>
@@ -486,18 +511,43 @@
     <div class="section-title">// Today's Dealflow — <span id="feed-date">Loading...</span></div>
 
     <div class="feed-meta">
-      <span class="feed-badge badge-monitor" id="feed-verdict">MONITOR</span>
-      <span id="feed-count" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--muted);">0 signals</span>
+      <span class="feed-badge badge-invest" id="feed-badge-invest">INVEST 0</span>
+      <span class="feed-badge badge-monitor" id="feed-badge-monitor">MONITOR 0</span>
+      <span id="feed-count" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--muted);">0 signals scored</span>
     </div>
 
-    <div id="signals-container">Loading signals...</div>
+    <div id="signals-container">
+      <p style="color:var(--muted); font-family: JetBrains Mono, monospace; font-size: 13px; padding: 40px 0; text-align: center;">
+        Loading signals...
+      </p>
+    </div>
 
-    <div id="pro-cta" class="tier-gate" style="display:none; position: relative; margin-top: 16px;">
+    <!-- Stats bar -->
+    <div class="stats-bar" id="stats-bar" style="display:none;">
+      <div class="stat">
+        <span class="stat-num invest" id="stat-invest">0</span>
+        <span class="stat-label">Invest</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num monitor" id="stat-monitor">0</span>
+        <span class="stat-label">Monitor</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" id="stat-pass">0</span>
+        <span class="stat-label">Pass</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" id="stat-total">0</span>
+        <span class="stat-label">Total Scored</span>
+      </div>
+    </div>
+
+    <div id="pro-cta" style="display:none; position: relative; margin-top: 16px;">
       <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 20px 24px;">
         <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
           <div>
             <div style="font-weight: 700; color: #fff; font-size: 16px;">See all scores + full reasoning</div>
-            <div style="font-size: 13px; color: var(--muted);">Plus access to the complete 30-day archive</div>
+            <div style="font-size: 13px; color: var(--muted);">Plus access to the complete archive and every decision log</div>
           </div>
           <a href="#waitlist" class="btn btn-primary" style="font-size: 13px; padding: 10px 20px;">Unlock Pro — $99/mo</a>
         </div>
@@ -514,17 +564,17 @@
       <div class="how-step">
         <div class="how-step-num">STEP 01 — SCAN</div>
         <h3>48 signals daily</h3>
-        <p>GitHub trending repos. Hacker News Show. arXiv submissions. Screened for AI-first, crypto-adjacent opportunities.</p>
+        <p>GitHub trending repos. Hacker News Show. arXiv submissions. Screened for Crypto, Decentralized AI, and AI.</p>
       </div>
       <div class="how-step">
         <div class="how-step-num">STEP 02 — SCORE</div>
-        <h3>6-dimension rubric</h3>
-        <p>Every signal scored on market size, agent-operability, revenue clarity, token design, whitespace, and founder edge.</p>
+        <h3>3-dimension rubric</h3>
+        <p>Every signal scored on traction, thesis fit (DeFi, agents, crypto, AI infra), and product edge.</p>
       </div>
       <div class="how-step">
         <div class="how-step-num">STEP 03 — DECIDE</div>
-        <h3>Logged and delivered</h3>
-        <p>Every BUILD / MONITOR / PASS verdict recorded with reasoning. Daily digest in your inbox. Archive that compounds.</p>
+        <h3>INVEST / MONITOR / PASS</h3>
+        <p>Every verdict logged with reasoning. INVEST signals: we reach out. MONITOR: track for 30 days. Archive that compounds.</p>
       </div>
     </div>
   </div>
@@ -544,41 +594,26 @@
       </thead>
       <tbody>
         <tr>
-          <td class="dim">Market Size</td>
-          <td style="color: var(--muted);">TAM in dollars — is this a billion-dollar category?</td>
+          <td class="dim">Traction</td>
+          <td style="color: var(--muted);">Stars, HN votes, revenue signals, active community</td>
           <td class="dim-score">0–10</td>
         </tr>
         <tr>
-          <td class="dim">Agent-Operability</td>
-          <td style="color: var(--muted);">Can this run without a human mid-loop? (10 = fully autonomous)</td>
+          <td class="dim">Thesis Fit</td>
+          <td style="color: var(--muted);">Fits W13 lanes: DeFi, AI Agents, Crypto, Decentralized Compute, Bitcoin, Compliance</td>
           <td class="dim-score">0–10</td>
         </tr>
         <tr>
-          <td class="dim">Revenue Clarity</td>
-          <td style="color: var(--muted);">How fast to first dollar? Is the buyer obvious?</td>
-          <td class="dim-score">0–10</td>
-        </tr>
-        <tr>
-          <td class="dim">Token Design Optionality</td>
-          <td style="color: var(--muted);">Does this have a natural on-chain component?</td>
-          <td class="dim-score">0–10</td>
-        </tr>
-        <tr>
-          <td class="dim">Whitespace Score</td>
-          <td style="color: var(--muted);">How crowded is this space? (10 = empty field)</td>
-          <td class="dim-score">0–10</td>
-        </tr>
-        <tr>
-          <td class="dim">Founder Edge</td>
-          <td style="color: var(--muted);">Does W13 have a specific advantage here vs. anyone else?</td>
+          <td class="dim">Product + Edge</td>
+          <td style="color: var(--muted);">Real product vs. research toy + differentiation signals</td>
           <td class="dim-score">0–10</td>
         </tr>
       </tbody>
     </table>
     <p style="margin-top: 16px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--muted);">
-      Average ≥ 7.0 = <span style="color: var(--build);">BUILD</span> &nbsp;|&nbsp;
-      5.5–6.9 = <span style="color: var(--monitor);">MONITOR</span> &nbsp;|&nbsp;
-      &lt; 5.5 = <span style="color: var(--muted);">PASS</span>
+      Average ≥ 5.5 = <span style="color: var(--invest);">INVEST</span> &nbsp;|&nbsp;
+      4.5–5.4 = <span style="color: var(--monitor);">MONITOR</span> &nbsp;|&nbsp;
+      &lt; 4.5 = <span style="color: var(--muted);">PASS</span>
     </p>
   </div>
 </section>
@@ -595,10 +630,10 @@
         <div class="pricing-desc">Follow the feed. Watch what we find.</div>
         <div class="pricing-price">$0 <span>/ forever</span></div>
         <ul class="pricing-features">
-          <li>Daily top 3 signals (names + source)</li>
-          <li>Verdict badges (BUILD / MONITOR)</li>
-          <li>W13 Twitter/X feed</li>
-          <li class="locked">Full score breakdown</li>
+          <li>Daily top INVEST signal — full scores visible</li>
+          <li>Top MONITOR signal visible</li>
+          <li>Verdict badges (INVEST / MONITOR / PASS)</li>
+          <li class="locked">Full daily digest (all signals)</li>
           <li class="locked">Decision log + reasoning</li>
           <li class="locked">Archive access</li>
           <li class="locked">API access</li>
@@ -612,8 +647,8 @@
         <div class="pricing-desc">For operators, builders, and solo funds.</div>
         <div class="pricing-price">$99 <span>/ month</span></div>
         <ul class="pricing-features">
-          <li>Full daily digest (all signals)</li>
-          <li>6-dimension scores + reasoning</li>
+          <li>Full daily digest (all signals + scores)</li>
+          <li>3-dimension rubric scores + reasoning</li>
           <li>30-day archive access</li>
           <li>Decision log for every verdict</li>
           <li>Email delivery — daily at 6 PM EST</li>
@@ -634,7 +669,7 @@
           <li>Real-time keyword alerts (personalized)</li>
           <li>API access — programmatic signals feed</li>
           <li>Custom rubric weights</li>
-          <li>Dedicated co-founder sourcing (BUILD signals)</li>
+          <li>Dedicated co-founder sourcing (INVEST signals)</li>
           <li>Quarterly thesis review call</li>
         </ul>
         <a href="#waitlist" class="btn btn-outline" style="width: 100%; justify-content: center;">Contact Us</a>
@@ -644,7 +679,7 @@
   </div>
 </section>
 
-<!-- ── WAITLIST ──────────────────────────────────────────────────────── -->
+<!-- ── WAITLIST ─────────────────────────────────────────────────────── -->
 <section class="section" id="waitlist">
   <div class="container">
     <div class="waitlist-section">
@@ -661,7 +696,7 @@
   </div>
 </section>
 
-<!-- ── FOOTER ───────────────────────────────────────────────────────── -->
+<!-- ── FOOTER ────────────────────────────────────────────────────────── -->
 <footer>
   W13 Venture Studio · w13.dealflow@outlook.com · Built by Hermes
 </footer>
@@ -671,12 +706,21 @@
   // ── Load dealflow data ────────────────────────────────────────────
   async function loadData() {
     try {
-      const res = await fetch('data/today.json');
-      if (!res.ok) throw new Error('No data yet');
-      return await res.json();
+      // Try multiple paths for resilience
+      let res = await fetch('data/today.json');
+      if (!res.ok) throw new Error('Not found');
+      const data = await res.json();
+      return data;
     } catch (e) {
-      console.warn('[W13] today.json not available:', e.message);
-      return null;
+      // Try root path
+      try {
+        const res = await fetch('/data/today.json');
+        if (!res.ok) throw new Error('Not found');
+        return await res.json();
+      } catch (e2) {
+        console.warn('[W13] Could not load today.json:', e2.message);
+        return null;
+      }
     }
   }
 
@@ -687,95 +731,147 @@
     return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
   }
 
-  // ── Score bar ─────────────────────────────────────────────────────
-  function scoreBar(val, max = 10) {
-    const pct = (val / max * 100).toFixed(0);
-    const color = val >= 8 ? 'var(--build)' : val >= 5.5 ? 'var(--monitor)' : 'var(--muted)';
+  // ── Score bar (single value) ───────────────────────────────────────
+  function scoreCell(label, val) {
+    const pct = (val / 10 * 100).toFixed(0);
+    const color = val >= 7 ? 'var(--invest)' : val >= 5 ? 'var(--monitor)' : 'var(--muted)';
     return `<div class="score-cell">
-      <span class="score-label">${val.toFixed(1)}</span>
+      <span class="score-label">${label}</span>
+      <span class="score-value">${val.toFixed(1)}</span>
       <div style="height:3px; background:${color}; width:${pct}%; border-radius:2px; margin-top:4px;"></div>
     </div>`;
   }
 
-  // ── Render signals ────────────────────────────────────────────────
+  // ── Determine verdict from data ─────────────────────────────────────
+  function getVerdict(signal) {
+    if (signal.verdict) return signal.verdict;
+    const a = signal.avg;
+    if (a >= 5.5) return 'INVEST';
+    if (a >= 4.5) return 'MONITOR';
+    return 'PASS';
+  }
+
+  // ── Render one card ─────────────────────────────────────────────────
+  function renderCard(signal, showScores) {
+    const verdict = getVerdict(signal);
+    const type = verdict === 'INVEST' ? 'invest' : verdict === 'MONITOR' ? 'monitor' : 'pass';
+    const badgeClass = verdict === 'INVEST' ? 'badge-invest' : verdict === 'MONITOR' ? 'badge-monitor' : 'badge-pass';
+    const cardClass = verdict === 'INVEST' ? 'invest' : verdict === 'MONITOR' ? 'monitor' : 'pass';
+
+    const scores = signal.scores || {};
+    // Support both old 6-dim and new 3-dim keys
+    const trc  = scores.trc  ?? scores.mkt ?? scores.agt ?? 0;
+    const ths  = scores.ths  ?? scores.rev ?? scores.tkn ?? 0;
+    const edge = scores.edge ?? scores.wht ?? scores.edg ?? 0;
+    const avg  = signal.avg ?? 0;
+
+    const scoreGrid = `
+      <div class="score-grid">
+        ${scoreCell('TRC', trc)}
+        ${scoreCell('THESIS', ths)}
+        ${scoreCell('EDGE', edge)}
+        <div class="score-cell">
+          <span class="score-label">AVG</span>
+          <span class="score-value avg">${avg.toFixed(2)}</span>
+        </div>
+      </div>`;
+
+    const sourceLine = signal.url
+      ? `<div class="signal-source"><a href="${signal.url}" target="_blank">${signal.url}</a></div>`
+      : `<div class="signal-source">${signal.source || ''}</div>`;
+
+    if (!showScores) {
+      // Free tier — blur scores, show gate
+      return `
+        <div class="signal-card ${cardClass}">
+          <div class="signal-header">
+            <div>
+              <div class="signal-name">${signal.name || signal.url?.split('/').pop() || '—'}</div>
+              ${sourceLine}
+            </div>
+            <span class="feed-badge ${badgeClass}">${verdict}</span>
+          </div>
+          <div class="signal-desc">${signal.desc || ''}</div>
+          <div class="tier-gate tier-blur">
+            ${scoreGrid}
+            <div class="tier-unlock">
+              <p>Full rubric scores — Pro subscribers only</p>
+              <a href="#pricing" class="btn btn-primary">Unlock Pro — $99/mo</a>
+            </div>
+          </div>
+        </div>`;
+    } else {
+      // Pro tier — full scores visible
+      return `
+        <div class="signal-card ${cardClass}">
+          <div class="signal-header">
+            <div>
+              <div class="signal-name">${signal.name || signal.url?.split('/').pop() || '—'}</div>
+              ${sourceLine}
+            </div>
+            <span class="feed-badge ${badgeClass}">${verdict}</span>
+          </div>
+          <div class="signal-desc">${signal.desc || ''}</div>
+          ${scoreGrid}
+        </div>`;
+    }
+  }
+
+  // ── Render all signals ───────────────────────────────────────────────
   function renderSignals(data) {
     const container = document.getElementById('signals-container');
 
     if (!data || !data.signals || data.signals.length === 0) {
-      container.innerHTML = '<p style="color:var(--muted); font-family: JetBrains Mono, monospace; font-size:13px;">No signals scored today. Next scan at 6 PM EST.</p>';
+      container.innerHTML = `<p style="color:var(--muted); font-family: JetBrains Mono, monospace; font-size:13px; text-align:center; padding:40px 0;">
+        No signals yet. Next scan runs at 6 PM EST today.
+      </p>`;
       return;
     }
 
+    // Update date
     document.getElementById('feed-date').textContent = fmtDate(data.date);
-    document.getElementById('feed-count').textContent = `${data.signals.length} signals scored`;
 
-    // Separate builds and monitors
-    const builds   = data.signals.filter(s => s.avg >= 6.5);
-    const monitors = data.signals.filter(s => s.avg >= 5.5 && s.avg < 6.5);
+    // Categorize signals
+    const signals = data.signals.map(s => ({ ...s, _verdict: getVerdict(s) }));
+    const invests  = signals.filter(s => s._verdict === 'INVEST');
+    const monitors = signals.filter(s => s._verdict === 'MONITOR');
+    const passed   = signals.filter(s => s._verdict === 'PASS');
+
+    // Update badge counts
+    document.getElementById('feed-badge-invest').textContent  = `INVEST ${invests.length}`;
+    document.getElementById('feed-badge-monitor').textContent = `MONITOR ${monitors.length}`;
+    document.getElementById('feed-count').textContent = `${signals.length} signals scored`;
+
+    // Stats bar
+    const statsBar = document.getElementById('stats-bar');
+    statsBar.style.display = 'flex';
+    document.getElementById('stat-invest').textContent  = invests.length;
+    document.getElementById('stat-monitor').textContent = monitors.length;
+    document.getElementById('stat-pass').textContent   = passed.length;
+    document.getElementById('stat-total').textContent  = signals.length;
 
     let html = '';
 
-    // FREE TIER: Show first MONITOR only, name + desc, no scores
+    // FREE TIER:
+    //   Show top INVEST with FULL scores visible (best product demo)
+    //   Show top MONITOR with FULL scores visible
+    //   Then gate the rest
+    if (invests.length > 0) {
+      html += renderCard(invests[0], /* showScores */ true);
+    }
     if (monitors.length > 0) {
-      const free = monitors[0];
-      html += renderCard(free, 'monitor', /* gated */ true);
+      html += renderCard(monitors[0], /* showScores */ true);
     }
 
-    // Show remaining MONITORs + all BUILDs — PRO TIER
-    const premiumSignals = [...builds, ...monitors.slice(1)];
-    if (premiumSignals.length > 0) {
+    // PRO TIER — rest of INVESTs + rest of MONITORs, full scores
+    const restSignals = [...invests.slice(1), ...monitors.slice(1)];
+    if (restSignals.length > 0) {
       document.getElementById('pro-cta').style.display = 'block';
-      premiumSignals.forEach(s => {
-        html += renderCard(s, s.avg >= 6.5 ? 'build' : 'monitor', /* gated */ false);
-      });
+      restSignals.forEach(s => { html += renderCard(s, true); });
     }
 
+    // PASS signals — don't show publicly
     container.innerHTML = html;
-  }
-
-  function renderCard(signal, type, gated) {
-    const badge = type === 'build' ? 'badge-build' : 'badge-monitor';
-    const badgeLabel = type === 'build' ? 'BUILD' : 'MONITOR';
-    const avgClass = signal.avg >= 6.5 ? 'avg' : '';
-
-    const scores = signal.scores || {};
-    const scoreGrid = `
-      <div class="score-grid">
-        ${scoreBar(scores.mkt)}
-        ${scoreBar(scores.agt)}
-        ${scoreBar(scores.rev)}
-        ${scoreBar(scores.tkn)}
-        ${scoreBar(scores.wht)}
-        <div class="score-cell">
-          <span class="score-label">AVG</span>
-          <span class="score-value ${avgClass}">${signal.avg.toFixed(2)}</span>
-        </div>
-      </div>`;
-
-    const gatedClass = gated ? 'tier-blur' : '';
-    const sourceLine = signal.url
-      ? `<div class="signal-source"><a href="${signal.url}" target="_blank">${signal.url}</a></div>`
-      : `<div class="signal-source">${signal.source || 'source'}</div>`;
-
-    return `
-      <div class="signal-card ${type}">
-        <div class="signal-header">
-          <div>
-            <div class="signal-name">${signal.name || signal.url?.split('/').pop() || '—'}</div>
-            ${sourceLine}
-          </div>
-          <span class="feed-badge ${badge}">${badgeLabel}</span>
-        </div>
-        <div class="signal-desc">${signal.desc || ''}</div>
-        <div class="tier-gate ${gatedClass}">
-          ${scoreGrid}
-          ${gated ? `
-          <div class="tier-unlock">
-            <p>Full scores + reasoning — Pro subscribers only</p>
-            <a href="#pricing" class="btn btn-primary">Unlock Pro — $99/mo</a>
-          </div>` : ''}
-        </div>
-      </div>`;
   }
 
   // ── Waitlist form ──────────────────────────────────────────────────
@@ -792,7 +888,7 @@
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          access_key: 'PUBLISH_YOUR_KEY_HERE', // Replace with real key from web3forms.com
+          access_key: 'PUBLISH_YOUR_KEY_HERE',
           subject: `W13 Dealflow Waitlist — ${email}`,
           from_name: 'W13 Dealflow',
           email: email,
