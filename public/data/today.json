@@ -1,51 +1,329 @@
 {
   "date": "2026-04-04",
-  "verdict": "MONITOR(3)",
   "signals": [
+    {
+      "name": "ruflo",
+      "source": "github",
+      "scores": {
+        "trc": 10,
+        "ths": 10,
+        "edge": 5.8
+      },
+      "avg": 8.6,
+      "verdict": "INVEST",
+      "url": "https://github.com/ruvnet/ruflo",
+      "desc": "🌊 The leading agent orchestration platform for Claude. Deploy intelligent multi-"
+    },
+    {
+      "name": "agenticSeek",
+      "source": "github",
+      "scores": {
+        "trc": 9.4,
+        "ths": 7,
+        "edge": 7.1
+      },
+      "avg": 7.83,
+      "verdict": "INVEST",
+      "url": "https://github.com/Fosowl/agenticSeek"
+    },
+    {
+      "name": "hexstrike-ai",
+      "source": "github",
+      "scores": {
+        "trc": 8.8,
+        "ths": 8.8,
+        "edge": 5.2
+      },
+      "avg": 7.6,
+      "verdict": "INVEST",
+      "url": "https://github.com/0x4m4/hexstrike-ai",
+      "desc": "HexStrike AI MCP Agents is an advanced MCP server that lets AI agents (Claude, G"
+    },
+    {
+      "name": "mcp-use",
+      "source": "github",
+      "scores": {
+        "trc": 9.2,
+        "ths": 7,
+        "edge": 5.8
+      },
+      "avg": 7.33,
+      "verdict": "INVEST",
+      "url": "https://github.com/mcp-use/mcp-use",
+      "desc": "The fullstack MCP framework to develop MCP Apps for ChatGPT / Claude & MCP Serve"
+    },
+    {
+      "name": "agent-framework",
+      "source": "github",
+      "scores": {
+        "trc": 8.8,
+        "ths": 7.9,
+        "edge": 5.2
+      },
+      "avg": 7.3,
+      "verdict": "INVEST",
+      "url": "https://github.com/microsoft/agent-framework",
+      "desc": "A framework for building, orchestrating and deploying AI agents and multi-agent"
+    },
     {
       "name": "koog",
       "source": "github",
       "scores": {
-        "mkt": 8.6,
-        "agt": 7.2,
-        "rev": 4.4,
-        "tkn": 3,
-        "wht": 5.5,
-        "edg": 9.8
+        "trc": 8.6,
+        "ths": 6.1,
+        "edge": 6.4
       },
-      "avg": 6.42,
+      "avg": 7.03,
+      "verdict": "INVEST",
       "url": "https://github.com/JetBrains/koog",
       "desc": "Koog is a JVM (Java and Kotlin) framework for building predictable, fault-tolera"
+    },
+    {
+      "name": "openai-agents-python",
+      "source": "github",
+      "scores": {
+        "trc": 9.4,
+        "ths": 7,
+        "edge": 4.6
+      },
+      "avg": 7,
+      "verdict": "INVEST",
+      "url": "https://github.com/openai/openai-agents-python",
+      "desc": "A lightweight, powerful framework for multi-agent workflows"
+    },
+    {
+      "name": "zeroclaw",
+      "source": "github",
+      "scores": {
+        "trc": 10,
+        "ths": 5.2,
+        "edge": 5.8
+      },
+      "avg": 7,
+      "verdict": "INVEST",
+      "url": "https://github.com/zeroclaw-labs/zeroclaw",
+      "desc": "Fast, small, and fully autonomous AI personal assistant infrastructure, ANY OS,"
     },
     {
       "name": "voltagent",
       "source": "github",
       "scores": {
-        "mkt": 4.4,
-        "agt": 7.2,
-        "rev": 3,
-        "tkn": 3,
-        "wht": 6.9,
-        "edg": 9.8
+        "trc": 9.2,
+        "ths": 5.2,
+        "edge": 5.8
       },
-      "avg": 5.72,
+      "avg": 6.73,
+      "verdict": "INVEST",
       "url": "https://github.com/VoltAgent/voltagent",
       "desc": "AI Agent Engineering Platform built on an Open Source TypeScript AI Agent Framew"
     },
     {
-      "name": "ruflo",
+      "name": "Open-AutoGLM",
       "source": "github",
       "scores": {
-        "mkt": 7.2,
-        "agt": 8.6,
-        "rev": 3,
-        "tkn": 3,
-        "wht": 5.5,
-        "edg": 7
+        "trc": 9.4,
+        "ths": 6.1,
+        "edge": 4.6
       },
-      "avg": 5.72,
-      "url": "https://github.com/ruvnet/ruflo",
-      "desc": "🌊 The leading agent orchestration platform for Claude. Deploy intelligent multi-"
+      "avg": 6.7,
+      "verdict": "INVEST",
+      "url": "https://github.com/zai-org/Open-AutoGLM",
+      "desc": "An Open Phone Agent Model & Framework. Unlocking the AI Phone for Everyone"
+    },
+    {
+      "name": "WeKnora",
+      "source": "github",
+      "scores": {
+        "trc": 9.4,
+        "ths": 6.1,
+        "edge": 4.6
+      },
+      "avg": 6.7,
+      "verdict": "INVEST",
+      "url": "https://github.com/Tencent/WeKnora",
+      "desc": "LLM-powered framework for deep document understanding, semantic retrieval, and c"
+    },
+    {
+      "name": "osaurus",
+      "source": "github",
+      "scores": {
+        "trc": 7.4,
+        "ths": 7.9,
+        "edge": 4.6
+      },
+      "avg": 6.63,
+      "verdict": "INVEST",
+      "url": "https://github.com/osaurus-ai/osaurus",
+      "desc": "Own your AI. The native macOS harness for AI agents -- any model, persistent mem"
+    },
+    {
+      "name": "12-factor-agents",
+      "source": "github",
+      "scores": {
+        "trc": 10,
+        "ths": 5.2,
+        "edge": 4.6
+      },
+      "avg": 6.6,
+      "verdict": "INVEST",
+      "url": "https://github.com/humanlayer/12-factor-agents",
+      "desc": "What are the principles we can use to build LLM-powered software that is actuall"
+    },
+    {
+      "name": "ii-agent",
+      "source": "github",
+      "scores": {
+        "trc": 8.2,
+        "ths": 5.2,
+        "edge": 5.8
+      },
+      "avg": 6.4,
+      "verdict": "INVEST",
+      "url": "https://github.com/Intelligent-Internet/ii-agent",
+      "desc": "II-Agent: a new open-source framework to build and deploy intelligent agents"
+    },
+    {
+      "name": "apple-docs-mcp",
+      "source": "github",
+      "scores": {
+        "trc": 8.2,
+        "ths": 5.2,
+        "edge": 5.8
+      },
+      "avg": 6.4,
+      "verdict": "INVEST",
+      "url": "https://github.com/kimsungwhee/apple-docs-mcp",
+      "desc": "MCP server for Apple Developer Documentation - Search iOS/macOS/SwiftUI/UIKit do"
+    },
+    {
+      "name": "OpenShell",
+      "source": "github",
+      "scores": {
+        "trc": 7,
+        "ths": 5.2,
+        "edge": 4
+      },
+      "avg": 5.4,
+      "verdict": "MONITOR",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "desc": "OpenShell is the safe, private runtime for autonomous AI agents."
+    },
+    {
+      "name": "mcp-crawl4ai-rag",
+      "source": "github",
+      "scores": {
+        "trc": 7,
+        "ths": 5.2,
+        "edge": 4
+      },
+      "avg": 5.4,
+      "verdict": "MONITOR",
+      "url": "https://github.com/coleam00/mcp-crawl4ai-rag",
+      "desc": "Web Crawling and RAG Capabilities for AI Agents and AI Coding Assistants"
+    },
+    {
+      "name": "agentic-ai-prompt-research",
+      "source": "github",
+      "scores": {
+        "trc": 7,
+        "ths": 5.2,
+        "edge": 4
+      },
+      "avg": 5.4,
+      "verdict": "MONITOR",
+      "url": "https://github.com/Leonxlnx/agentic-ai-prompt-research",
+      "desc": "Research into how agentic AI coding assistants work — reconstructed prompt patte"
+    },
+    {
+      "name": "claude-code.nvim",
+      "source": "github",
+      "scores": {
+        "trc": 7,
+        "ths": 5.2,
+        "edge": 4
+      },
+      "avg": 5.4,
+      "verdict": "MONITOR",
+      "url": "https://github.com/greggh/claude-code.nvim",
+      "desc": "Seamless integration between Claude Code AI assistant and Neovim"
+    },
+    {
+      "name": "OpenSpec",
+      "source": "github",
+      "scores": {
+        "trc": 9,
+        "ths": 3,
+        "edge": 4
+      },
+      "avg": 5.33,
+      "verdict": "MONITOR",
+      "url": "https://github.com/Fission-AI/OpenSpec",
+      "desc": "Spec-driven development (SDD) for AI coding assistants."
+    },
+    {
+      "name": "zclaw",
+      "source": "github",
+      "scores": {
+        "trc": 7.8,
+        "ths": 3,
+        "edge": 5.2
+      },
+      "avg": 5.33,
+      "verdict": "MONITOR",
+      "url": "https://github.com/tnm/zclaw",
+      "desc": "Your personal AI assistant at all-in 888KiB (~35KB in app code). Running on an E"
+    },
+    {
+      "name": "Show HN: sllm – Split a GPU node with othe",
+      "source": "hackernews",
+      "scores": {
+        "trc": 4,
+        "ths": 7.2,
+        "edge": 4
+      },
+      "avg": 5.07,
+      "verdict": "MONITOR",
+      "url": "https://sllm.cloud",
+      "desc": "Show HN by jrandolf: Show HN: sllm – Split a GPU node with other developers, unl"
+    },
+    {
+      "name": "Show HN: Apfel – The free AI already on yo",
+      "source": "hackernews",
+      "scores": {
+        "trc": 8,
+        "ths": 3,
+        "edge": 4
+      },
+      "avg": 5,
+      "verdict": "MONITOR",
+      "url": "https://apfel.franzai.com",
+      "desc": "Show HN by franze: Show HN: Apfel – The free AI already on your Mac"
+    },
+    {
+      "name": "Show HN: Travel Hacking Toolkit – Points s",
+      "source": "hackernews",
+      "scores": {
+        "trc": 6.4,
+        "ths": 3.9,
+        "edge": 4.6
+      },
+      "avg": 4.97,
+      "verdict": "MONITOR",
+      "url": "https://github.com/borski/travel-hacking-toolkit",
+      "desc": "Show HN by borski: Show HN: Travel Hacking Toolkit – Points search and trip plan"
+    },
+    {
+      "name": "Show HN: Tokencap – Token budget enforceme",
+      "source": "hackernews",
+      "scores": {
+        "trc": 4,
+        "ths": 6.3,
+        "edge": 4
+      },
+      "avg": 4.77,
+      "verdict": "MONITOR",
+      "url": "https://github.com/pykul/tokencap",
+      "desc": "Show HN by pykul: Show HN: Tokencap – Token budget enforcement across your AI ag"
     }
   ]
 }

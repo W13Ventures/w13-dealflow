@@ -19,55 +19,72 @@ const OUT_ARCH   = path.join(OUT_DIR, "archive.json");
 function parseDigest(content) {
   const lines = content.split("\n");
   const signals = [];
-  let section = null;
+  let currentVerdict = null;
+  let date = null;
 
   for (const raw of lines) {
     const line = raw.trim();
 
     // Date line: "W13 DEALFLOW DAILY  ·  Apr 04, 2026  ·  2026-04-04  ·  11:55 AM EST"
     const dateMatch = line.match(/(\d{4}-\d{2}-\d{2})/);
-    if (dateMatch && !section) {
-      section = { date: dateMatch[1] };
+    if (dateMatch) date = dateMatch[1];
+
+    // INVEST / MONITOR / PASS section
+    if (line.startsWith("══ INVEST") || line.startsWith("══ MONITOR") || line.startsWith("══ PASS")) {
+      // "══ INVEST (24) — Reach out..." → "INVEST"
+      const m = line.match(/══\s*(INVEST|MONITOR|PASS)/);
+      if (m) currentVerdict = m[1];
+      continue;
     }
 
-    // MONITOR / BUILD / PASS section
-    if (line.startsWith("══ MONITORs") || line.startsWith("══ BUILD") || line.startsWith("══ PASS")) {
-      section = section || {};
-      section.verdict = line.replace(/[═\s]/g, "").replace("MONITORs","MONITOR");
+    // Skip separator lines and headers
+    if (line.startsWith("─") || line.startsWith("THESIS") ||
+        line.startsWith("W13 DEALFLOW") || line.startsWith("Total") ||
+        line.includes("RUBRIC") || line.includes("SOURCE") || line.startsWith("Full")) {
+      continue;
     }
 
-    // Score table row: | koog | 8.6 | 7.2 | ...
-    const rowMatch = line.match(/^\|\s*([^|]+?)\s*\|\s*([\d.]+)\s*\|\s*([\d.]+)\s*\|\s*([\d.]+)\s*\|\s*([\d.]+)\s*\|\s*([\d.]+)\s*\|\s*([\d.]+)\s*\|\s*([\d.]+)\s*\|\s*\[([^\]]+)\]/);
+    // Score table row (new 4-col format):
+    // | ruflo                          |    10 |    10 |   5.8 |   8.6 |  [github]
+    const rowMatch = line.match(
+      /^\|\s*([^|]{2,50})\s*\|\s*([\d.]+)\s*\|\s*([\d.]+)\s*\|\s*([\d.]+)\s*\|\s*([\d.]+)\s*\|\s*\[([^\]]+)\]/
+    );
     if (rowMatch) {
-      const [, name, mkt, agt, rev, tkn, wht, edg, avg, source] = rowMatch.map(s => s.trim());
+      const [, name, trc, ths, edge, avg, source] = rowMatch.map(s => s.trim());
       signals.push({
         name,
         source,
-        scores: { mkt: +mkt, agt: +agt, rev: +rev, tkn: +tkn, wht: +wht, edg: +edg },
+        scores: { trc: +trc, ths: +ths, edge: +edge },
         avg: +avg,
+        verdict: currentVerdict || "UNKNOWN",
       });
+      // grab next lines for URL + description
+      continue;
     }
 
-    // GitHub URL line
-    if (line.startsWith("https://github.com/") && signals.length) {
+    // GitHub / URL line
+    if ((line.startsWith("https://github.com/") || line.startsWith("https://"))
+        && signals.length) {
       signals[signals.length - 1].url = line;
+      continue;
     }
-    // Description line (starts with description text)
-    if (line && !line.startsWith("|") && !line.startsWith("W13") && !line.startsWith("THESIS")
-        && !line.startsWith("BUILD") && !line.startsWith("MONITOR") && !line.startsWith("PASS")
-        && !line.startsWith("SCORE") && !line.startsWith("Total") && !line.startsWith("sources")
-        && !line.startsWith("http") && !line.startsWith("═") && !line.startsWith(" ")
-        && line.length > 20 && !line.includes("SCORE KEY") && !line.includes("sources:")) {
-      if (signals.length && !signals[signals.length-1].desc) {
-        signals[signals.length-1].desc = line.slice(0, 200);
-      }
+
+    // Description line (free text, > 20 chars, not a header)
+    if (line.length > 25 &&
+        !line.startsWith("|") &&
+        !line.startsWith("═") &&
+        !line.startsWith("+") &&
+        !line.match(/^\s*(TRC|THESIS|EDGE|AVG|MKT|AGT|REV|TKN|WHT|EDG)/) &&
+        signals.length &&
+        !signals[signals.length-1].desc) {
+      signals[signals.length-1].desc = line.slice(0, 200);
     }
   }
 
-  return { date: section?.date, verdict: section?.verdict || "UNKNOWN", signals };
+  return { date, signals };
 }
 
-// ── Main ──────────────────────────────────────────────────────────────────────
+// ── Main ─────────────────────────────────────────────────────────────────────
 function main() {
   if (!fs.existsSync(VAULT)) {
     console.error(`[ERR] Vault not found: ${VAULT}`);
@@ -76,30 +93,37 @@ function main() {
 
   fs.mkdirSync(OUT_DIR, { recursive: true });
 
-  // Get all digest files sorted by date
   const files = fs.readdirSync(VAULT)
     .filter(f => f.includes("Dealflow Digest"))
     .sort()
-    .reverse(); // newest first
+    .reverse();
 
   console.log(`[DATA] Found ${files.length} digest files`);
 
   const archive = files.map(f => {
     const content = fs.readFileSync(path.join(VAULT, f), "utf8");
     return parseDigest(content);
-  }).filter(d => d.date);
+  }).filter(d => d.date && d.signals.length);
 
   const today = archive[0] || null;
+
+  if (today) {
+    // Assign verdicts based on avg score
+    today.signals.forEach(s => {
+      if (!s.verdict || s.verdict === "UNKNOWN") {
+        s.verdict = s.avg >= 5.5 ? "INVEST" : s.avg >= 4.5 ? "MONITOR" : "PASS";
+      }
+    });
+  }
 
   fs.writeFileSync(OUT_TODAY, JSON.stringify(today, null, 2));
   fs.writeFileSync(OUT_ARCH,  JSON.stringify(archive, null, 2));
 
-  console.log(`[DATA] today.json written (${today?.signals?.length || 0} signals)`);
-  console.log(`[DATA] archive.json written (${archive.length} days)`);
   if (today) {
-    const builds = today.signals.filter(s => s.avg >= 6.5);
-    const monitors = today.signals.filter(s => s.avg >= 5.5 && s.avg < 6.5);
-    console.log(`[DATA] Today: ${builds.length} BUILD, ${monitors.length} MONITOR`);
+    const invests  = today.signals.filter(s => s.avg >= 5.5);
+    const monitors = today.signals.filter(s => s.avg >= 4.5 && s.avg < 5.5);
+    console.log(`[DATA] today.json written (${today.signals.length} signals)`);
+    console.log(`[DATA] INVEST: ${invests.length}  |  MONITOR: ${monitors.length}`);
   }
 }
 
