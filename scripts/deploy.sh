@@ -18,7 +18,7 @@ cd "$SITE_DIR"
 node scripts/export_data.js > /dev/null 2>&1
 
 # 3. Commit + push (pushes to gh-pages if on main, or just commits)
-git add public/data/today.json public/data/archive.json index.html
+git add data/today.json data/archive.json index.html
 if git diff --cached --quiet; then
     echo "[DEPLOY] No data changes — skipping push"
 else
