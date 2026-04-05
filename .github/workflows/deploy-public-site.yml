@@ -1,0 +1,80 @@
+name: Deploy Public Site
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-site
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      # ── Checkout site ──────────────────────────────────────────────
+      - name: Checkout site repo
+        uses: actions/checkout@v4
+
+      # ── Checkout vault for dealflow digests ────────────────────────
+      # export_data.js reads the digest files from the vault archive
+      - name: Checkout vault for digest data
+        uses: actions/checkout@v4
+        with:
+          repository: W13Ventures/brain-vault
+          path: vault
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      # ── Export digest data to today.json + archive.json ───────────
+      - name: Export dealflow data from vault
+        env:
+          VAULT_DIGEST_DIR: ${{ github.workspace }}/vault/06 W13 Venture Studio/05 Dealflow Archive
+        run: node scripts/export_data.js
+
+      - name: Configure git
+        run: |
+          git config --local user.name "Hermes Agent"
+          git config --local user.email "hermes@w13.io"
+
+      # ── Commit updated data to main ───────────────────────────────
+      - name: Commit data updates
+        run: |
+          git add data/today.json data/archive.json
+          if git diff --cached --quiet; then
+            echo "No data changes"
+          else
+            git commit -m "Dealflow data $(date +'%Y-%m-%d') [skip ci]"
+            git push
+          fi
+
+      # ── Deploy to GitHub Pages ─────────────────────────────────────
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages

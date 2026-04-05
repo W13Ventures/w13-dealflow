@@ -10,7 +10,9 @@
 const fs   = require("fs");
 const path = require("path");
 
-const VAULT      = path.join(process.env.HOME, "Documents/Obsidian Vault/Brain/06 W13 Venture Studio/05 Dealflow Archive");
+const VAULT      = process.env.VAULT_DIGEST_DIR
+  || path.join(process.env.HOME, "Documents/Obsidian Vault/Brain/06 W13 Venture Studio/05 Dealflow Archive");
+// Write to public/data/ (gh-pages serves from public/ root)
 const OUT_DIR    = path.join(__dirname, "../public/data");
 const OUT_TODAY  = path.join(OUT_DIR, "today.json");
 const OUT_ARCH   = path.join(OUT_DIR, "archive.json");
