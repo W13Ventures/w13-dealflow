@@ -1,51 +1,209 @@
 {
-  "date": "2026-04-04",
-  "verdict": "MONITOR(3)",
+  "date": "2026-04-25",
+  "verdict": "BUILD",
   "signals": [
-    {
-      "name": "koog",
-      "source": "github",
-      "scores": {
-        "mkt": 8.6,
-        "agt": 7.2,
-        "rev": 4.4,
-        "tkn": 3,
-        "wht": 5.5,
-        "edg": 9.8
-      },
-      "avg": 6.42,
-      "url": "https://github.com/JetBrains/koog",
-      "desc": "Koog is a JVM (Java and Kotlin) framework for building predictable, fault-tolera"
-    },
-    {
-      "name": "voltagent",
-      "source": "github",
-      "scores": {
-        "mkt": 4.4,
-        "agt": 7.2,
-        "rev": 3,
-        "tkn": 3,
-        "wht": 6.9,
-        "edg": 9.8
-      },
-      "avg": 5.72,
-      "url": "https://github.com/VoltAgent/voltagent",
-      "desc": "AI Agent Engineering Platform built on an Open Source TypeScript AI Agent Framew"
-    },
     {
       "name": "ruflo",
       "source": "github",
+      "lane": "AI Agents",
+      "verdict": "BUILD",
       "scores": {
-        "mkt": 7.2,
-        "agt": 8.6,
-        "rev": 3,
-        "tkn": 3,
-        "wht": 5.5,
-        "edg": 7
+        "mkt": 10,
+        "agt": 10,
+        "rev": 5.8,
+        "tkn": 0,
+        "wht": 6.45,
+        "edg": 6.45
       },
-      "avg": 5.72,
+      "avg": 6.45,
       "url": "https://github.com/ruvnet/ruflo",
-      "desc": "🌊 The leading agent orchestration platform for Claude. Deploy intelligent multi-"
+      "desc": "Lane: AI Agents + Foundation Models"
+    },
+    {
+      "name": "Anthropic-Cybersecurity-Skills",
+      "source": "github",
+      "lane": "Foundation M",
+      "verdict": "BUILD",
+      "scores": {
+        "mkt": 10,
+        "agt": 7,
+        "rev": 7,
+        "tkn": 0,
+        "wht": 6,
+        "edg": 6
+      },
+      "avg": 6,
+      "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+      "desc": "Lane: Foundation Models + AI Agents"
+    },
+    {
+      "name": "agenticSeek",
+      "source": "github",
+      "lane": "AI Agents",
+      "verdict": "BUILD",
+      "scores": {
+        "mkt": 9.4,
+        "agt": 7,
+        "rev": 7.1,
+        "tkn": 0,
+        "wht": 5.88,
+        "edg": 5.88
+      },
+      "avg": 5.88,
+      "url": "https://github.com/Fosowl/agenticSeek",
+      "desc": "Fully Local Manus AI. No APIs, No $200 monthly bills. Enjoy an autonomous agent that"
+    },
+    {
+      "name": "OpenMontage",
+      "source": "github",
+      "lane": "AI Agents",
+      "verdict": "BUILD",
+      "scores": {
+        "mkt": 9.3,
+        "agt": 5.2,
+        "rev": 8.9,
+        "tkn": 0,
+        "wht": 5.85,
+        "edg": 5.85
+      },
+      "avg": 5.85,
+      "url": "https://github.com/calesthio/OpenMontage",
+      "desc": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 5"
+    },
+    {
+      "name": "hexstrike-ai",
+      "source": "github",
+      "lane": "Foundation M",
+      "verdict": "BUILD",
+      "scores": {
+        "mkt": 8.8,
+        "agt": 8.8,
+        "rev": 5.2,
+        "tkn": 0,
+        "wht": 5.7,
+        "edg": 5.7
+      },
+      "avg": 5.7,
+      "url": "https://github.com/0x4m4/hexstrike-ai",
+      "desc": "Lane: Foundation Models + AI Agents"
+    },
+    {
+      "name": "mcp-use",
+      "source": "github",
+      "lane": "Foundation M",
+      "verdict": "BUILD",
+      "scores": {
+        "mkt": 9.2,
+        "agt": 7,
+        "rev": 5.8,
+        "tkn": 0,
+        "wht": 5.5,
+        "edg": 5.5
+      },
+      "avg": 5.5,
+      "url": "https://github.com/mcp-use/mcp-use",
+      "desc": "Lane: Foundation Models + AI Agents"
+    },
+    {
+      "name": "agent-framework",
+      "source": "github",
+      "lane": "AI Agents",
+      "verdict": "MONITOR",
+      "scores": {
+        "mkt": 8.8,
+        "agt": 7.9,
+        "rev": 5.2,
+        "tkn": 0,
+        "wht": 5.48,
+        "edg": 5.48
+      },
+      "avg": 5.48,
+      "url": "https://github.com/microsoft/agent-framework",
+      "desc": "A framework for building, orchestrating and deploying AI agents and multi-agent workf"
+    },
+    {
+      "name": "koog",
+      "source": "github",
+      "lane": "Foundation M",
+      "verdict": "MONITOR",
+      "scores": {
+        "mkt": 8.6,
+        "agt": 6.1,
+        "rev": 6.4,
+        "tkn": 0,
+        "wht": 5.28,
+        "edg": 5.28
+      },
+      "avg": 5.28,
+      "desc": "Lane: Foundation Models + AI Agents",
+      "url": "https://github.com/JetBrains/koog"
+    },
+    {
+      "name": "openai-agents-python",
+      "source": "github",
+      "lane": "AI Agents",
+      "verdict": "MONITOR",
+      "scores": {
+        "mkt": 9.4,
+        "agt": 7,
+        "rev": 4.6,
+        "tkn": 0,
+        "wht": 5.25,
+        "edg": 5.25
+      },
+      "avg": 5.25,
+      "desc": "Lane: AI Agents + Foundation Models",
+      "url": "https://github.com/openai/openai-agents-python"
+    },
+    {
+      "name": "zeroclaw",
+      "source": "github",
+      "lane": "AI Agents",
+      "verdict": "MONITOR",
+      "scores": {
+        "mkt": 10,
+        "agt": 5.2,
+        "rev": 5.8,
+        "tkn": 0,
+        "wht": 5.25,
+        "edg": 5.25
+      },
+      "avg": 5.25,
+      "url": "https://github.com/zeroclaw-labs/zeroclaw",
+      "desc": "Fast, small, and fully autonomous AI personal assistant infrastructure, ANY OS, ANY P"
+    },
+    {
+      "name": "osaurus",
+      "source": "github",
+      "lane": "AI Agents",
+      "verdict": "MONITOR",
+      "scores": {
+        "mkt": 8.4,
+        "agt": 7.9,
+        "rev": 4.6,
+        "tkn": 0,
+        "wht": 5.22,
+        "edg": 5.22
+      },
+      "avg": 5.22,
+      "url": "https://github.com/osaurus-ai/osaurus",
+      "desc": "Own your AI. The native macOS harness for AI agents -- any model, persistent memory,"
+    },
+    {
+      "name": "Escaping the Agreement Trap: Defens",
+      "source": "arxiv",
+      "lane": "Safety & Ali",
+      "verdict": "MONITOR",
+      "scores": {
+        "mkt": 5.5,
+        "agt": 4.8,
+        "rev": 5.2,
+        "tkn": 5,
+        "wht": 5.12,
+        "edg": 5.12
+      },
+      "avg": 5.12,
+      "desc": "Lane: Safety & Alignment"
     }
   ]
 }
