@@ -7,8 +7,12 @@
  * Output: public/data/today.json, public/data/archive.json
  */
 
-const fs   = require("fs");
-const path = require("path");
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname  = path.dirname(__filename);
 
 const VAULT      = process.env.VAULT_DIGEST_DIR
   || path.join(process.env.HOME, "Documents/Obsidian Vault/Brain/06 W13 Venture Studio/05 Dealflow Archive");
@@ -21,33 +25,59 @@ const OUT_ARCH   = path.join(OUT_DIR, "archive.json");
 function parseDigest(content) {
   const lines = content.split("\n");
   const signals = [];
-  let section = null;
+  let date = null;
+  let currentVerdict = null;
 
   for (const raw of lines) {
     const line = raw.trim();
 
     // Date line: "W13 DEALFLOW DAILY  ·  Apr 04, 2026  ·  2026-04-04  ·  11:55 AM EST"
     const dateMatch = line.match(/(\d{4}-\d{2}-\d{2})/);
-    if (dateMatch && !section) {
-      section = { date: dateMatch[1] };
+    if (dateMatch && !date) {
+      date = dateMatch[1];
     }
 
-    // MONITOR / BUILD / PASS section
-    if (line.startsWith("══ MONITORs") || line.startsWith("══ BUILD") || line.startsWith("══ PASS")) {
-      section = section || {};
-      section.verdict = line.replace(/[═\s]/g, "").replace("MONITORs","MONITOR");
+    // MONITOR / BUILD / INVEST / PASS section
+    if (line.startsWith("══ MONITOR") || line.startsWith("══ BUILD") || line.startsWith("══ INVEST") || line.startsWith("══ PASS")) {
+      // Extract clean verdict: strip ═, spaces, parenthetical, em-dash text
+      const raw = line.replace(/[═]*/g, "").trim();
+      const parenMatch = raw.match(/^([A-Z]+)/);
+      let clean = parenMatch ? parenMatch[1] : raw.split(/\s/)[0];
+      if (clean === "INVEST") clean = "BUILD";
+      if (clean === "MONITORS") clean = "MONITOR";
+      currentVerdict = clean;
     }
 
-    // Score table row: | koog | 8.6 | 7.2 | ...
-    const rowMatch = line.match(/^\|\s*([^|]+?)\s*\|\s*([\d.]+)\s*\|\s*([\d.]+)\s*\|\s*([\d.]+)\s*\|\s*([\d.]+)\s*\|\s*([\d.]+)\s*\|\s*([\d.]+)\s*\|\s*([\d.]+)\s*\|\s*\[([^\]]+)\]/);
+    // Score table row (new format): | name | TRC | THESIS | EDGE | RES | AVG | LANE | [source]
+    // Also old format: | name | mkt | agt | rev | tkn | wht | edg | avg | [source]
+    const rowMatch = line.match(/^\|\s*([^|]+?)\s*\|\s*([\d.]+)\s*\|\s*([\d.]+)\s*\|\s*([\d.]+)\s*\|\s*([\d.]+)\s*\|\s*([\d.]+)\s*\|\s*([\w &]+)\s*\|\s*\[([^\]]+)\]/);
     if (rowMatch) {
-      const [, name, mkt, agt, rev, tkn, wht, edg, avg, source] = rowMatch.map(s => s.trim());
-      signals.push({
-        name,
-        source,
-        scores: { mkt: +mkt, agt: +agt, rev: +rev, tkn: +tkn, wht: +wht, edg: +edg },
-        avg: +avg,
-      });
+      const [, name, col2, col3, col4, col5, col6, lane, source] = rowMatch.map(s => s.trim());
+      // Determine if this is new format (TRC/THESIS/EDGE/RES) or old (mkt/agt/rev/tkn/wht/edg)
+      // New: col6 = AVG (single digit before decimal like 6.45), lane has spaces
+      // Old: col6 = edg, avg is in col7
+      const isNewFormat = col6.length <= 5 && !col6.includes(' ');
+      if (isNewFormat) {
+        // New format: TRC, THESIS, EDGE, RES, AVG
+        const avg = parseFloat(col6);
+        signals.push({
+          name,
+          source,
+          lane,
+          verdict: currentVerdict,
+          scores: { mkt: +col2, agt: +col3, rev: +col4, tkn: +col5, wht: avg, edg: avg },
+          avg,
+        });
+      } else {
+        // Old format: mkt, agt, rev, tkn, wht, edg, avg
+        signals.push({
+          name,
+          source,
+          verdict: currentVerdict,
+          scores: { mkt: +col2, agt: +col3, rev: +col4, tkn: +col5, wht: +col6, edg: +parseFloat(col7) },
+          avg: +parseFloat(col7),
+        });
+      }
     }
 
     // GitHub URL line
@@ -66,7 +96,7 @@ function parseDigest(content) {
     }
   }
 
-  return { date: section?.date, verdict: section?.verdict || "UNKNOWN", signals };
+  return { date, verdict: signals[0]?.verdict || "UNKNOWN", signals };
 }
 
 // ── Main ──────────────────────────────────────────────────────────────────────
