@@ -1,188 +1,5095 @@
 [
   {
-    "date": "2026-04-04",
+    "date": "2026-04-25",
+    "verdict": "BUILD",
     "signals": [
       {
         "name": "ruflo",
         "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
         "scores": {
-          "trc": 10,
-          "ths": 10,
-          "edge": 5.8
+          "mkt": 10,
+          "agt": 10,
+          "rev": 5.8,
+          "tkn": 0,
+          "wht": 6.45,
+          "edg": 6.45
         },
-        "avg": 8.6,
-        "verdict": "INVEST",
+        "avg": 6.45,
         "url": "https://github.com/ruvnet/ruflo",
-        "desc": "🌊 The leading agent orchestration platform for Claude. Deploy intelligent multi-"
+        "desc": "Lane: AI Agents + Foundation Models"
+      },
+      {
+        "name": "Anthropic-Cybersecurity-Skills",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 10,
+          "agt": 7,
+          "rev": 7,
+          "tkn": 0,
+          "wht": 6,
+          "edg": 6
+        },
+        "avg": 6,
+        "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+        "desc": "Lane: Foundation Models + AI Agents"
       },
       {
         "name": "agenticSeek",
         "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
         "scores": {
-          "trc": 9.4,
-          "ths": 7,
-          "edge": 7.1
+          "mkt": 9.4,
+          "agt": 7,
+          "rev": 7.1,
+          "tkn": 0,
+          "wht": 5.88,
+          "edg": 5.88
         },
-        "avg": 7.83,
-        "verdict": "INVEST",
-        "url": "https://github.com/Fosowl/agenticSeek"
+        "avg": 5.88,
+        "url": "https://github.com/Fosowl/agenticSeek",
+        "desc": "Fully Local Manus AI. No APIs, No $200 monthly bills. Enjoy an autonomous agent that"
+      },
+      {
+        "name": "OpenMontage",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.3,
+          "agt": 5.2,
+          "rev": 8.9,
+          "tkn": 0,
+          "wht": 5.85,
+          "edg": 5.85
+        },
+        "avg": 5.85,
+        "url": "https://github.com/calesthio/OpenMontage",
+        "desc": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 5"
       },
       {
         "name": "hexstrike-ai",
         "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
         "scores": {
-          "trc": 8.8,
-          "ths": 8.8,
-          "edge": 5.2
+          "mkt": 8.8,
+          "agt": 8.8,
+          "rev": 5.2,
+          "tkn": 0,
+          "wht": 5.7,
+          "edg": 5.7
         },
-        "avg": 7.6,
-        "verdict": "INVEST",
+        "avg": 5.7,
         "url": "https://github.com/0x4m4/hexstrike-ai",
-        "desc": "HexStrike AI MCP Agents is an advanced MCP server that lets AI agents (Claude, G"
+        "desc": "Lane: Foundation Models + AI Agents"
       },
       {
         "name": "mcp-use",
         "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
         "scores": {
-          "trc": 9.2,
-          "ths": 7,
-          "edge": 5.8
+          "mkt": 9.2,
+          "agt": 7,
+          "rev": 5.8,
+          "tkn": 0,
+          "wht": 5.5,
+          "edg": 5.5
         },
-        "avg": 7.33,
-        "verdict": "INVEST",
+        "avg": 5.5,
         "url": "https://github.com/mcp-use/mcp-use",
-        "desc": "The fullstack MCP framework to develop MCP Apps for ChatGPT / Claude & MCP Serve"
+        "desc": "Lane: Foundation Models + AI Agents"
       },
       {
         "name": "agent-framework",
         "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
         "scores": {
-          "trc": 8.8,
-          "ths": 7.9,
-          "edge": 5.2
+          "mkt": 8.8,
+          "agt": 7.9,
+          "rev": 5.2,
+          "tkn": 0,
+          "wht": 5.48,
+          "edg": 5.48
         },
-        "avg": 7.3,
-        "verdict": "INVEST",
+        "avg": 5.48,
         "url": "https://github.com/microsoft/agent-framework",
-        "desc": "A framework for building, orchestrating and deploying AI agents and multi-agent"
+        "desc": "A framework for building, orchestrating and deploying AI agents and multi-agent workf"
       },
       {
         "name": "koog",
         "source": "github",
+        "lane": "Foundation M",
+        "verdict": "MONITOR",
         "scores": {
-          "trc": 8.6,
-          "ths": 6.1,
-          "edge": 6.4
+          "mkt": 8.6,
+          "agt": 6.1,
+          "rev": 6.4,
+          "tkn": 0,
+          "wht": 5.28,
+          "edg": 5.28
         },
-        "avg": 7.03,
-        "verdict": "INVEST",
-        "url": "https://github.com/JetBrains/koog",
-        "desc": "Koog is a JVM (Java and Kotlin) framework for building predictable, fault-tolera"
+        "avg": 5.28,
+        "desc": "Lane: Foundation Models + AI Agents",
+        "url": "https://github.com/JetBrains/koog"
       },
       {
         "name": "openai-agents-python",
         "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
         "scores": {
-          "trc": 9.4,
-          "ths": 7,
-          "edge": 4.6
+          "mkt": 9.4,
+          "agt": 7,
+          "rev": 4.6,
+          "tkn": 0,
+          "wht": 5.25,
+          "edg": 5.25
         },
-        "avg": 7,
-        "verdict": "INVEST",
-        "url": "https://github.com/openai/openai-agents-python",
-        "desc": "A lightweight, powerful framework for multi-agent workflows"
+        "avg": 5.25,
+        "desc": "Lane: AI Agents + Foundation Models",
+        "url": "https://github.com/openai/openai-agents-python"
       },
       {
         "name": "zeroclaw",
         "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
         "scores": {
-          "trc": 10,
-          "ths": 5.2,
-          "edge": 5.8
+          "mkt": 10,
+          "agt": 5.2,
+          "rev": 5.8,
+          "tkn": 0,
+          "wht": 5.25,
+          "edg": 5.25
         },
-        "avg": 7,
-        "verdict": "INVEST",
+        "avg": 5.25,
         "url": "https://github.com/zeroclaw-labs/zeroclaw",
-        "desc": "Fast, small, and fully autonomous AI personal assistant infrastructure, ANY OS,"
+        "desc": "Fast, small, and fully autonomous AI personal assistant infrastructure, ANY OS, ANY P"
       },
       {
-        "name": "OpenShell",
+        "name": "osaurus",
         "source": "github",
-        "scores": {
-          "trc": 7,
-          "ths": 5.2,
-          "edge": 4
-        },
-        "avg": 5.4,
+        "lane": "AI Agents",
         "verdict": "MONITOR",
-        "url": "https://github.com/NVIDIA/OpenShell",
-        "desc": "OpenShell is the safe, private runtime for autonomous AI agents."
+        "scores": {
+          "mkt": 8.4,
+          "agt": 7.9,
+          "rev": 4.6,
+          "tkn": 0,
+          "wht": 5.22,
+          "edg": 5.22
+        },
+        "avg": 5.22,
+        "url": "https://github.com/osaurus-ai/osaurus",
+        "desc": "Own your AI. The native macOS harness for AI agents -- any model, persistent memory,"
       },
       {
-        "name": "mcp-crawl4ai-rag",
-        "source": "github",
-        "scores": {
-          "trc": 7,
-          "ths": 5.2,
-          "edge": 4
-        },
-        "avg": 5.4,
+        "name": "Escaping the Agreement Trap: Defens",
+        "source": "arxiv",
+        "lane": "Safety & Ali",
         "verdict": "MONITOR",
-        "url": "https://github.com/coleam00/mcp-crawl4ai-rag",
-        "desc": "Web Crawling and RAG Capabilities for AI Agents and AI Coding Assistants"
+        "scores": {
+          "mkt": 5.5,
+          "agt": 4.8,
+          "rev": 5.2,
+          "tkn": 5,
+          "wht": 5.12,
+          "edg": 5.12
+        },
+        "avg": 5.12,
+        "desc": "Lane: Safety & Alignment"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-24",
+    "verdict": "BUILD",
+    "signals": [
+      {
+        "name": "ruflo",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 10,
+          "agt": 10,
+          "rev": 5.8,
+          "tkn": 7,
+          "wht": 8.2,
+          "edg": 8.2
+        },
+        "avg": 8.2,
+        "url": "https://github.com/ruvnet/ruflo",
+        "desc": "Lane: AI Agents + Foundation Models"
+      },
+      {
+        "name": "Anthropic-Cybersecurity-Skills",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 10,
+          "agt": 7,
+          "rev": 7,
+          "tkn": 3,
+          "wht": 6.75,
+          "edg": 6.75
+        },
+        "avg": 6.75,
+        "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "hexstrike-ai",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 8.8,
+          "agt": 8.8,
+          "rev": 5.2,
+          "tkn": 3,
+          "wht": 6.45,
+          "edg": 6.45
+        },
+        "avg": 6.45,
+        "url": "https://github.com/0x4m4/hexstrike-ai",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "agenticSeek",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 7,
+          "rev": 7.1,
+          "tkn": 2,
+          "wht": 6.38,
+          "edg": 6.38
+        },
+        "avg": 6.38,
+        "url": "https://github.com/Fosowl/agenticSeek",
+        "desc": "Fully Local Manus AI. No APIs, No $200 monthly bills. Enjoy an autonomous agent that"
+      },
+      {
+        "name": "OpenMontage",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.3,
+          "agt": 5.2,
+          "rev": 8.9,
+          "tkn": 1,
+          "wht": 6.1,
+          "edg": 6.1
+        },
+        "avg": 6.1,
+        "url": "https://github.com/calesthio/OpenMontage",
+        "desc": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 5"
+      },
+      {
+        "name": "WeKnora",
+        "source": "github",
+        "lane": "RAG & Knowle",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 6.1,
+          "rev": 4.6,
+          "tkn": 4,
+          "wht": 6.03,
+          "edg": 6.03
+        },
+        "avg": 6.03,
+        "url": "https://github.com/Tencent/WeKnora",
+        "desc": "Lane: RAG & Knowledge + Foundation Models"
+      },
+      {
+        "name": "openai-agents-python",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 7,
+          "rev": 4.6,
+          "tkn": 3,
+          "wht": 6,
+          "edg": 6
+        },
+        "avg": 6,
+        "url": "https://github.com/openai/openai-agents-python",
+        "desc": "Lane: AI Agents + Foundation Models"
+      },
+      {
+        "name": "voltagent",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.2,
+          "agt": 5.2,
+          "rev": 5.8,
+          "tkn": 3,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/VoltAgent/voltagent",
+        "desc": "Research: AI Agents, RAG & Knowledge"
+      },
+      {
+        "name": "pentagi",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 5,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/vxcontrol/pentagi",
+        "desc": "Research: Foundation Models, AI Agents, RAG & Knowledge"
+      },
+      {
+        "name": "byterover-cli",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 7.4,
+          "agt": 5.2,
+          "rev": 4.6,
+          "tkn": 6,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/campfirein/byterover-cli",
+        "desc": "Lane: AI Agents + RAG & Knowledge"
+      },
+      {
+        "name": "ralph",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 9,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 3,
+          "wht": 5.3,
+          "edg": 5.3
+        },
+        "avg": 5.3,
+        "url": "https://github.com/snarktank/ralph",
+        "desc": "Ralph is an autonomous AI agent loop that runs repeatedly until all PRD items are com"
       },
       {
         "name": "agentic-ai-prompt-research",
         "source": "github",
-        "scores": {
-          "trc": 7,
-          "ths": 5.2,
-          "edge": 4
-        },
-        "avg": 5.4,
+        "lane": "AI Agents",
         "verdict": "MONITOR",
+        "scores": {
+          "mkt": 7,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 5,
+          "wht": 5.3,
+          "edg": 5.3
+        },
+        "avg": 5.3,
         "url": "https://github.com/Leonxlnx/agentic-ai-prompt-research",
-        "desc": "Research into how agentic AI coding assistants work — reconstructed prompt patte"
+        "desc": "Research into how agentic AI coding assistants work — reconstructed prompt patterns,"
       },
       {
-        "name": "claude-code.nvim",
+        "name": "Open-AutoGLM",
         "source": "github",
-        "scores": {
-          "trc": 7,
-          "ths": 5.2,
-          "edge": 4
-        },
-        "avg": 5.4,
+        "lane": "AI Agents",
         "verdict": "MONITOR",
-        "url": "https://github.com/greggh/claude-code.nvim",
-        "desc": "Seamless integration between Claude Code AI assistant and Neovim"
+        "scores": {
+          "mkt": 9.4,
+          "agt": 6.1,
+          "rev": 4.6,
+          "tkn": 1,
+          "wht": 5.28,
+          "edg": 5.28
+        },
+        "avg": 5.28,
+        "url": "https://github.com/zai-org/Open-AutoGLM",
+        "desc": "An Open Phone Agent Model & Framework. Unlocking the AI Phone for Everyone"
       },
       {
-        "name": "OpenSpec",
+        "name": "koog",
         "source": "github",
-        "scores": {
-          "trc": 9,
-          "ths": 3,
-          "edge": 4
-        },
-        "avg": 5.33,
+        "lane": "Foundation M",
         "verdict": "MONITOR",
-        "url": "https://github.com/Fission-AI/OpenSpec",
-        "desc": "Spec-driven development (SDD) for AI coding assistants."
+        "scores": {
+          "mkt": 8.6,
+          "agt": 6.1,
+          "rev": 6.4,
+          "tkn": 0,
+          "wht": 5.28,
+          "edg": 5.28
+        },
+        "avg": 5.28,
+        "desc": "Lane: Foundation Models + AI Agents",
+        "url": "https://github.com/JetBrains/koog"
       },
       {
-        "name": "zclaw",
+        "name": "inkos",
         "source": "github",
-        "scores": {
-          "trc": 7.8,
-          "ths": 3,
-          "edge": 5.2
-        },
-        "avg": 5.33,
+        "lane": "AI Agents",
         "verdict": "MONITOR",
-        "url": "https://github.com/tnm/zclaw",
-        "desc": "Your personal AI assistant at all-in 888KiB (~35KB in app code). Running on an E"
+        "scores": {
+          "mkt": 7,
+          "agt": 6.1,
+          "rev": 5,
+          "tkn": 3,
+          "wht": 5.28,
+          "edg": 5.28
+        },
+        "avg": 5.28,
+        "url": "https://github.com/Narcooo/inkos",
+        "desc": "Autonomous novel writing AI Agent — agents write, audit, and revise novels with human"
+      },
+      {
+        "name": "12-factor-agents",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 10,
+          "agt": 5.2,
+          "rev": 4.6,
+          "tkn": 1,
+          "wht": 5.2,
+          "edg": 5.2
+        },
+        "avg": 5.2,
+        "desc": "Lane: Foundation Models + AI Agents",
+        "url": "https://github.com/humanlayer/12-factor-agents"
       }
     ]
+  },
+  {
+    "date": "2026-04-23",
+    "verdict": "BUILD",
+    "signals": [
+      {
+        "name": "hexstrike-ai",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 8.8,
+          "agt": 8.8,
+          "rev": 5.2,
+          "tkn": 7,
+          "wht": 7.45,
+          "edg": 7.45
+        },
+        "avg": 7.45,
+        "url": "https://github.com/0x4m4/hexstrike-ai",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "ruflo",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 10,
+          "agt": 10,
+          "rev": 5.8,
+          "tkn": 3,
+          "wht": 7.2,
+          "edg": 7.2
+        },
+        "avg": 7.2,
+        "url": "https://github.com/ruvnet/ruflo",
+        "desc": "Lane: AI Agents + Foundation Models"
+      },
+      {
+        "name": "Anthropic-Cybersecurity-Skills",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 10,
+          "agt": 7,
+          "rev": 7,
+          "tkn": 3,
+          "wht": 6.75,
+          "edg": 6.75
+        },
+        "avg": 6.75,
+        "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "agenticSeek",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 7,
+          "rev": 7.1,
+          "tkn": 2,
+          "wht": 6.38,
+          "edg": 6.38
+        },
+        "avg": 6.38,
+        "url": "https://github.com/Fosowl/agenticSeek",
+        "desc": "Fully Local Manus AI. No APIs, No $200 monthly bills. Enjoy an autonomous agent that"
+      },
+      {
+        "name": "OpenMontage",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.3,
+          "agt": 5.2,
+          "rev": 8.9,
+          "tkn": 1,
+          "wht": 6.1,
+          "edg": 6.1
+        },
+        "avg": 6.1,
+        "url": "https://github.com/calesthio/OpenMontage",
+        "desc": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 5"
+      },
+      {
+        "name": "WeKnora",
+        "source": "github",
+        "lane": "RAG & Knowle",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 6.1,
+          "rev": 4.6,
+          "tkn": 4,
+          "wht": 6.03,
+          "edg": 6.03
+        },
+        "avg": 6.03,
+        "url": "https://github.com/Tencent/WeKnora",
+        "desc": "Lane: RAG & Knowledge + Foundation Models"
+      },
+      {
+        "name": "openai-agents-python",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 7,
+          "rev": 4.6,
+          "tkn": 3,
+          "wht": 6,
+          "edg": 6
+        },
+        "avg": 6,
+        "url": "https://github.com/openai/openai-agents-python",
+        "desc": "Lane: AI Agents + Foundation Models"
+      },
+      {
+        "name": "voltagent",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.2,
+          "agt": 5.2,
+          "rev": 5.8,
+          "tkn": 3,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/VoltAgent/voltagent",
+        "desc": "Research: AI Agents, RAG & Knowledge"
+      },
+      {
+        "name": "pentagi",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 5,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/vxcontrol/pentagi",
+        "desc": "Research: Foundation Models, AI Agents, RAG & Knowledge"
+      },
+      {
+        "name": "byterover-cli",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 7.4,
+          "agt": 5.2,
+          "rev": 4.6,
+          "tkn": 6,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/campfirein/byterover-cli",
+        "desc": "Lane: AI Agents + RAG & Knowledge"
+      },
+      {
+        "name": "ralph",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 9,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 3,
+          "wht": 5.3,
+          "edg": 5.3
+        },
+        "avg": 5.3,
+        "url": "https://github.com/snarktank/ralph",
+        "desc": "Ralph is an autonomous AI agent loop that runs repeatedly until all PRD items are com"
+      },
+      {
+        "name": "agentic-ai-prompt-research",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 7,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 5,
+          "wht": 5.3,
+          "edg": 5.3
+        },
+        "avg": 5.3,
+        "url": "https://github.com/Leonxlnx/agentic-ai-prompt-research",
+        "desc": "Research into how agentic AI coding assistants work — reconstructed prompt patterns,"
+      },
+      {
+        "name": "Open-AutoGLM",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 6.1,
+          "rev": 4.6,
+          "tkn": 1,
+          "wht": 5.28,
+          "edg": 5.28
+        },
+        "avg": 5.28,
+        "url": "https://github.com/zai-org/Open-AutoGLM",
+        "desc": "An Open Phone Agent Model & Framework. Unlocking the AI Phone for Everyone"
+      },
+      {
+        "name": "koog",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 8.6,
+          "agt": 6.1,
+          "rev": 6.4,
+          "tkn": 0,
+          "wht": 5.28,
+          "edg": 5.28
+        },
+        "avg": 5.28,
+        "desc": "Lane: Foundation Models + AI Agents",
+        "url": "https://github.com/JetBrains/koog"
+      },
+      {
+        "name": "12-factor-agents",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 10,
+          "agt": 5.2,
+          "rev": 4.6,
+          "tkn": 1,
+          "wht": 5.2,
+          "edg": 5.2
+        },
+        "avg": 5.2,
+        "desc": "Lane: Foundation Models + AI Agents",
+        "url": "https://github.com/humanlayer/12-factor-agents"
+      },
+      {
+        "name": "mcp-crawl4ai-rag",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 7,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 3,
+          "wht": 4.8,
+          "edg": 4.8
+        },
+        "avg": 4.8,
+        "desc": "Lane: AI Agents + RAG & Knowledge",
+        "url": "https://github.com/coleam00/mcp-crawl4ai-rag"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-22",
+    "verdict": "BUILD",
+    "signals": [
+      {
+        "name": "ruflo",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 10,
+          "agt": 10,
+          "rev": 5.8,
+          "tkn": 7,
+          "wht": 8.2,
+          "edg": 8.2
+        },
+        "avg": 8.2,
+        "url": "https://github.com/ruvnet/ruflo",
+        "desc": "Lane: AI Agents + Foundation Models"
+      },
+      {
+        "name": "Anthropic-Cybersecurity-Skills",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 10,
+          "agt": 7,
+          "rev": 7,
+          "tkn": 3,
+          "wht": 6.75,
+          "edg": 6.75
+        },
+        "avg": 6.75,
+        "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "hexstrike-ai",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 8.8,
+          "agt": 8.8,
+          "rev": 5.2,
+          "tkn": 3,
+          "wht": 6.45,
+          "edg": 6.45
+        },
+        "avg": 6.45,
+        "url": "https://github.com/0x4m4/hexstrike-ai",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "agenticSeek",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 7,
+          "rev": 7.1,
+          "tkn": 2,
+          "wht": 6.38,
+          "edg": 6.38
+        },
+        "avg": 6.38,
+        "url": "https://github.com/Fosowl/agenticSeek",
+        "desc": "Fully Local Manus AI. No APIs, No $200 monthly bills. Enjoy an autonomous agent that"
+      },
+      {
+        "name": "OpenMontage",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.3,
+          "agt": 5.2,
+          "rev": 8.9,
+          "tkn": 1,
+          "wht": 6.1,
+          "edg": 6.1
+        },
+        "avg": 6.1,
+        "url": "https://github.com/calesthio/OpenMontage",
+        "desc": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 5"
+      },
+      {
+        "name": "WeKnora",
+        "source": "github",
+        "lane": "RAG & Knowle",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 6.1,
+          "rev": 4.6,
+          "tkn": 4,
+          "wht": 6.03,
+          "edg": 6.03
+        },
+        "avg": 6.03,
+        "url": "https://github.com/Tencent/WeKnora",
+        "desc": "Lane: RAG & Knowledge + Foundation Models"
+      },
+      {
+        "name": "openai-agents-python",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 7,
+          "rev": 4.6,
+          "tkn": 3,
+          "wht": 6,
+          "edg": 6
+        },
+        "avg": 6,
+        "url": "https://github.com/openai/openai-agents-python",
+        "desc": "Lane: AI Agents + Foundation Models"
+      },
+      {
+        "name": "voltagent",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.2,
+          "agt": 5.2,
+          "rev": 5.8,
+          "tkn": 3,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/VoltAgent/voltagent",
+        "desc": "Research: AI Agents, RAG & Knowledge"
+      },
+      {
+        "name": "pentagi",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 5,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/vxcontrol/pentagi",
+        "desc": "Research: Foundation Models, AI Agents, RAG & Knowledge"
+      },
+      {
+        "name": "byterover-cli",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 7.4,
+          "agt": 5.2,
+          "rev": 4.6,
+          "tkn": 6,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/campfirein/byterover-cli",
+        "desc": "Lane: AI Agents + RAG & Knowledge"
+      },
+      {
+        "name": "ralph",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 9,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 3,
+          "wht": 5.3,
+          "edg": 5.3
+        },
+        "avg": 5.3,
+        "url": "https://github.com/snarktank/ralph",
+        "desc": "Ralph is an autonomous AI agent loop that runs repeatedly until all PRD items are com"
+      },
+      {
+        "name": "agentic-ai-prompt-research",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 7,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 5,
+          "wht": 5.3,
+          "edg": 5.3
+        },
+        "avg": 5.3,
+        "url": "https://github.com/Leonxlnx/agentic-ai-prompt-research",
+        "desc": "Research into how agentic AI coding assistants work — reconstructed prompt patterns,"
+      },
+      {
+        "name": "Open-AutoGLM",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 6.1,
+          "rev": 4.6,
+          "tkn": 1,
+          "wht": 5.28,
+          "edg": 5.28
+        },
+        "avg": 5.28,
+        "url": "https://github.com/zai-org/Open-AutoGLM",
+        "desc": "An Open Phone Agent Model & Framework. Unlocking the AI Phone for Everyone"
+      },
+      {
+        "name": "koog",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 8.6,
+          "agt": 6.1,
+          "rev": 6.4,
+          "tkn": 0,
+          "wht": 5.28,
+          "edg": 5.28
+        },
+        "avg": 5.28,
+        "desc": "Lane: Foundation Models + AI Agents",
+        "url": "https://github.com/JetBrains/koog"
+      },
+      {
+        "name": "12-factor-agents",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 10,
+          "agt": 5.2,
+          "rev": 4.6,
+          "tkn": 1,
+          "wht": 5.2,
+          "edg": 5.2
+        },
+        "avg": 5.2,
+        "desc": "Lane: Foundation Models + AI Agents",
+        "url": "https://github.com/humanlayer/12-factor-agents"
+      },
+      {
+        "name": "mcp-crawl4ai-rag",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 7,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 3,
+          "wht": 4.8,
+          "edg": 4.8
+        },
+        "avg": 4.8,
+        "desc": "Lane: AI Agents + RAG & Knowledge",
+        "url": "https://github.com/coleam00/mcp-crawl4ai-rag"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-21",
+    "verdict": "BUILD",
+    "signals": [
+      {
+        "name": "ruflo",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 10,
+          "agt": 10,
+          "rev": 5.8,
+          "tkn": 8,
+          "wht": 8.45,
+          "edg": 8.45
+        },
+        "avg": 8.45,
+        "url": "https://github.com/ruvnet/ruflo",
+        "desc": "Lane: AI Agents + Foundation Models"
+      },
+      {
+        "name": "Anthropic-Cybersecurity-Skills",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 10,
+          "agt": 7,
+          "rev": 7,
+          "tkn": 3,
+          "wht": 6.75,
+          "edg": 6.75
+        },
+        "avg": 6.75,
+        "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "hexstrike-ai",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 8.8,
+          "agt": 8.8,
+          "rev": 5.2,
+          "tkn": 3,
+          "wht": 6.45,
+          "edg": 6.45
+        },
+        "avg": 6.45,
+        "url": "https://github.com/0x4m4/hexstrike-ai",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "agenticSeek",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 7,
+          "rev": 7.1,
+          "tkn": 2,
+          "wht": 6.38,
+          "edg": 6.38
+        },
+        "avg": 6.38,
+        "url": "https://github.com/Fosowl/agenticSeek",
+        "desc": "Fully Local Manus AI. No APIs, No $200 monthly bills. Enjoy an autonomous agent that"
+      },
+      {
+        "name": "OpenMontage",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.3,
+          "agt": 5.2,
+          "rev": 8.9,
+          "tkn": 1,
+          "wht": 6.1,
+          "edg": 6.1
+        },
+        "avg": 6.1,
+        "url": "https://github.com/calesthio/OpenMontage",
+        "desc": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 5"
+      },
+      {
+        "name": "WeKnora",
+        "source": "github",
+        "lane": "RAG & Knowle",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 6.1,
+          "rev": 4.6,
+          "tkn": 4,
+          "wht": 6.03,
+          "edg": 6.03
+        },
+        "avg": 6.03,
+        "url": "https://github.com/Tencent/WeKnora",
+        "desc": "Lane: RAG & Knowledge + Foundation Models"
+      },
+      {
+        "name": "openai-agents-python",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 7,
+          "rev": 4.6,
+          "tkn": 3,
+          "wht": 6,
+          "edg": 6
+        },
+        "avg": 6,
+        "url": "https://github.com/openai/openai-agents-python",
+        "desc": "Lane: AI Agents + Foundation Models"
+      },
+      {
+        "name": "voltagent",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.2,
+          "agt": 5.2,
+          "rev": 5.8,
+          "tkn": 3,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/VoltAgent/voltagent",
+        "desc": "Research: AI Agents, RAG & Knowledge"
+      },
+      {
+        "name": "pentagi",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 5,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/vxcontrol/pentagi",
+        "desc": "Research: Foundation Models, AI Agents, RAG & Knowledge"
+      },
+      {
+        "name": "byterover-cli",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 7.4,
+          "agt": 5.2,
+          "rev": 4.6,
+          "tkn": 6,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/campfirein/byterover-cli",
+        "desc": "Lane: AI Agents + RAG & Knowledge"
+      },
+      {
+        "name": "ralph",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 9,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 3,
+          "wht": 5.3,
+          "edg": 5.3
+        },
+        "avg": 5.3,
+        "url": "https://github.com/snarktank/ralph",
+        "desc": "Ralph is an autonomous AI agent loop that runs repeatedly until all PRD items are com"
+      },
+      {
+        "name": "agentic-ai-prompt-research",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 7,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 5,
+          "wht": 5.3,
+          "edg": 5.3
+        },
+        "avg": 5.3,
+        "url": "https://github.com/Leonxlnx/agentic-ai-prompt-research",
+        "desc": "Research into how agentic AI coding assistants work — reconstructed prompt patterns,"
+      },
+      {
+        "name": "Open-AutoGLM",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 6.1,
+          "rev": 4.6,
+          "tkn": 1,
+          "wht": 5.28,
+          "edg": 5.28
+        },
+        "avg": 5.28,
+        "url": "https://github.com/zai-org/Open-AutoGLM",
+        "desc": "An Open Phone Agent Model & Framework. Unlocking the AI Phone for Everyone"
+      },
+      {
+        "name": "koog",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 8.6,
+          "agt": 6.1,
+          "rev": 6.4,
+          "tkn": 0,
+          "wht": 5.28,
+          "edg": 5.28
+        },
+        "avg": 5.28,
+        "desc": "Lane: Foundation Models + AI Agents",
+        "url": "https://github.com/JetBrains/koog"
+      },
+      {
+        "name": "12-factor-agents",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 10,
+          "agt": 5.2,
+          "rev": 4.6,
+          "tkn": 1,
+          "wht": 5.2,
+          "edg": 5.2
+        },
+        "avg": 5.2,
+        "desc": "Lane: Foundation Models + AI Agents",
+        "url": "https://github.com/humanlayer/12-factor-agents"
+      },
+      {
+        "name": "mcp-crawl4ai-rag",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 7,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 3,
+          "wht": 4.8,
+          "edg": 4.8
+        },
+        "avg": 4.8,
+        "desc": "Lane: AI Agents + RAG & Knowledge",
+        "url": "https://github.com/coleam00/mcp-crawl4ai-rag"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-20",
+    "verdict": "BUILD",
+    "signals": [
+      {
+        "name": "hexstrike-ai",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 8.8,
+          "agt": 8.8,
+          "rev": 5.2,
+          "tkn": 7,
+          "wht": 7.45,
+          "edg": 7.45
+        },
+        "avg": 7.45,
+        "url": "https://github.com/0x4m4/hexstrike-ai",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "ruflo",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 10,
+          "agt": 10,
+          "rev": 5.8,
+          "tkn": 3,
+          "wht": 7.2,
+          "edg": 7.2
+        },
+        "avg": 7.2,
+        "url": "https://github.com/ruvnet/ruflo",
+        "desc": "Lane: AI Agents + Foundation Models"
+      },
+      {
+        "name": "Anthropic-Cybersecurity-Skills",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 10,
+          "agt": 7,
+          "rev": 7,
+          "tkn": 3,
+          "wht": 6.75,
+          "edg": 6.75
+        },
+        "avg": 6.75,
+        "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "agenticSeek",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 7,
+          "rev": 7.1,
+          "tkn": 2,
+          "wht": 6.38,
+          "edg": 6.38
+        },
+        "avg": 6.38,
+        "url": "https://github.com/Fosowl/agenticSeek",
+        "desc": "Fully Local Manus AI. No APIs, No $200 monthly bills. Enjoy an autonomous agent that"
+      },
+      {
+        "name": "OpenMontage",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.3,
+          "agt": 5.2,
+          "rev": 8.9,
+          "tkn": 1,
+          "wht": 6.1,
+          "edg": 6.1
+        },
+        "avg": 6.1,
+        "url": "https://github.com/calesthio/OpenMontage",
+        "desc": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 5"
+      },
+      {
+        "name": "WeKnora",
+        "source": "github",
+        "lane": "RAG & Knowle",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 6.1,
+          "rev": 4.6,
+          "tkn": 4,
+          "wht": 6.03,
+          "edg": 6.03
+        },
+        "avg": 6.03,
+        "url": "https://github.com/Tencent/WeKnora",
+        "desc": "Lane: RAG & Knowledge + Foundation Models"
+      },
+      {
+        "name": "openai-agents-python",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 7,
+          "rev": 4.6,
+          "tkn": 3,
+          "wht": 6,
+          "edg": 6
+        },
+        "avg": 6,
+        "url": "https://github.com/openai/openai-agents-python",
+        "desc": "Lane: AI Agents + Foundation Models"
+      },
+      {
+        "name": "voltagent",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.2,
+          "agt": 5.2,
+          "rev": 5.8,
+          "tkn": 3,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/VoltAgent/voltagent",
+        "desc": "Research: AI Agents, RAG & Knowledge"
+      },
+      {
+        "name": "pentagi",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 5,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/vxcontrol/pentagi",
+        "desc": "Research: Foundation Models, AI Agents, RAG & Knowledge"
+      },
+      {
+        "name": "byterover-cli",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 7.4,
+          "agt": 5.2,
+          "rev": 4.6,
+          "tkn": 6,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/campfirein/byterover-cli",
+        "desc": "Lane: AI Agents + RAG & Knowledge"
+      },
+      {
+        "name": "ralph",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 9,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 3,
+          "wht": 5.3,
+          "edg": 5.3
+        },
+        "avg": 5.3,
+        "url": "https://github.com/snarktank/ralph",
+        "desc": "Ralph is an autonomous AI agent loop that runs repeatedly until all PRD items are com"
+      },
+      {
+        "name": "agentic-ai-prompt-research",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 7,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 5,
+          "wht": 5.3,
+          "edg": 5.3
+        },
+        "avg": 5.3,
+        "url": "https://github.com/Leonxlnx/agentic-ai-prompt-research",
+        "desc": "Research into how agentic AI coding assistants work — reconstructed prompt patterns,"
+      },
+      {
+        "name": "Open-AutoGLM",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 6.1,
+          "rev": 4.6,
+          "tkn": 1,
+          "wht": 5.28,
+          "edg": 5.28
+        },
+        "avg": 5.28,
+        "url": "https://github.com/zai-org/Open-AutoGLM",
+        "desc": "An Open Phone Agent Model & Framework. Unlocking the AI Phone for Everyone"
+      },
+      {
+        "name": "koog",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 8.6,
+          "agt": 6.1,
+          "rev": 6.4,
+          "tkn": 0,
+          "wht": 5.28,
+          "edg": 5.28
+        },
+        "avg": 5.28,
+        "desc": "Lane: Foundation Models + AI Agents",
+        "url": "https://github.com/JetBrains/koog"
+      },
+      {
+        "name": "Discover and Prove: An Open-source",
+        "source": "arxiv",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 4.8,
+          "agt": 6.1,
+          "rev": 5.2,
+          "tkn": 5,
+          "wht": 5.28,
+          "edg": 5.28
+        },
+        "avg": 5.28,
+        "desc": "Discover and Prove: An Open-source Agentic Framework for Hard Mode Automated Theorem"
+      },
+      {
+        "name": "12-factor-agents",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 10,
+          "agt": 5.2,
+          "rev": 4.6,
+          "tkn": 1,
+          "wht": 5.2,
+          "edg": 5.2
+        },
+        "avg": 5.2,
+        "desc": "Lane: Foundation Models + AI Agents",
+        "url": "https://github.com/humanlayer/12-factor-agents"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-19",
+    "verdict": "BUILD",
+    "signals": [
+      {
+        "name": "ruflo",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 10,
+          "agt": 10,
+          "rev": 5.8,
+          "tkn": 0,
+          "wht": 6.45,
+          "edg": 6.45
+        },
+        "avg": 6.45,
+        "url": "https://github.com/ruvnet/ruflo",
+        "desc": "Lane: AI Agents + Foundation Models"
+      },
+      {
+        "name": "agenticSeek",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 7,
+          "rev": 7.1,
+          "tkn": 0,
+          "wht": 5.88,
+          "edg": 5.88
+        },
+        "avg": 5.88,
+        "url": "https://github.com/Fosowl/agenticSeek",
+        "desc": "Fully Local Manus AI. No APIs, No $200 monthly bills. Enjoy an autonomous agent that"
+      },
+      {
+        "name": "OpenMontage",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.3,
+          "agt": 5.2,
+          "rev": 8.9,
+          "tkn": 0,
+          "wht": 5.85,
+          "edg": 5.85
+        },
+        "avg": 5.85,
+        "url": "https://github.com/calesthio/OpenMontage",
+        "desc": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 5"
+      },
+      {
+        "name": "Anthropic-Cybersecurity-Skills",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9,
+          "agt": 7,
+          "rev": 7,
+          "tkn": 0,
+          "wht": 5.75,
+          "edg": 5.75
+        },
+        "avg": 5.75,
+        "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "hexstrike-ai",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 8.8,
+          "agt": 8.8,
+          "rev": 5.2,
+          "tkn": 0,
+          "wht": 5.7,
+          "edg": 5.7
+        },
+        "avg": 5.7,
+        "url": "https://github.com/0x4m4/hexstrike-ai",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "mcp-use",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.2,
+          "agt": 7,
+          "rev": 5.8,
+          "tkn": 0,
+          "wht": 5.5,
+          "edg": 5.5
+        },
+        "avg": 5.5,
+        "url": "https://github.com/mcp-use/mcp-use",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "agent-framework",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 8.8,
+          "agt": 7.9,
+          "rev": 5.2,
+          "tkn": 0,
+          "wht": 5.48,
+          "edg": 5.48
+        },
+        "avg": 5.48,
+        "url": "https://github.com/microsoft/agent-framework",
+        "desc": "A framework for building, orchestrating and deploying AI agents and multi-agent workf"
+      },
+      {
+        "name": "koog",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 8.6,
+          "agt": 6.1,
+          "rev": 6.4,
+          "tkn": 0,
+          "wht": 5.28,
+          "edg": 5.28
+        },
+        "avg": 5.28,
+        "desc": "Lane: Foundation Models + AI Agents",
+        "url": "https://github.com/JetBrains/koog"
+      },
+      {
+        "name": "openai-agents-python",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 7,
+          "rev": 4.6,
+          "tkn": 0,
+          "wht": 5.25,
+          "edg": 5.25
+        },
+        "avg": 5.25,
+        "desc": "Lane: AI Agents + Foundation Models",
+        "url": "https://github.com/openai/openai-agents-python"
+      },
+      {
+        "name": "zeroclaw",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 10,
+          "agt": 5.2,
+          "rev": 5.8,
+          "tkn": 0,
+          "wht": 5.25,
+          "edg": 5.25
+        },
+        "avg": 5.25,
+        "url": "https://github.com/zeroclaw-labs/zeroclaw",
+        "desc": "Fast, small, and fully autonomous AI personal assistant infrastructure, ANY OS, ANY P"
+      },
+      {
+        "name": "osaurus",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 8.4,
+          "agt": 7.9,
+          "rev": 4.6,
+          "tkn": 0,
+          "wht": 5.22,
+          "edg": 5.22
+        },
+        "avg": 5.22,
+        "url": "https://github.com/osaurus-ai/osaurus",
+        "desc": "Own your AI. The native macOS harness for AI agents -- any model, persistent memory,"
+      },
+      {
+        "name": "voltagent",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 9.2,
+          "agt": 5.2,
+          "rev": 5.8,
+          "tkn": 0,
+          "wht": 5.05,
+          "edg": 5.05
+        },
+        "avg": 5.05,
+        "url": "https://github.com/VoltAgent/voltagent",
+        "desc": "AI Agent Engineering Platform built on an Open Source TypeScript AI Agent Framework"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-18",
+    "verdict": "BUILD",
+    "signals": [
+      {
+        "name": "ruflo",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 10,
+          "agt": 10,
+          "rev": 5.8,
+          "tkn": 3,
+          "wht": 7.2,
+          "edg": 7.2
+        },
+        "avg": 7.2,
+        "url": "https://github.com/ruvnet/ruflo",
+        "desc": "Lane: AI Agents + Foundation Models"
+      },
+      {
+        "name": "Anthropic-Cybersecurity-Skills",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9,
+          "agt": 7,
+          "rev": 7,
+          "tkn": 3,
+          "wht": 6.5,
+          "edg": 6.5
+        },
+        "avg": 6.5,
+        "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "hexstrike-ai",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 8.8,
+          "agt": 8.8,
+          "rev": 5.2,
+          "tkn": 3,
+          "wht": 6.45,
+          "edg": 6.45
+        },
+        "avg": 6.45,
+        "url": "https://github.com/0x4m4/hexstrike-ai",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "agenticSeek",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 7,
+          "rev": 7.1,
+          "tkn": 2,
+          "wht": 6.38,
+          "edg": 6.38
+        },
+        "avg": 6.38,
+        "url": "https://github.com/Fosowl/agenticSeek",
+        "desc": "Fully Local Manus AI. No APIs, No $200 monthly bills. Enjoy an autonomous agent that"
+      },
+      {
+        "name": "OpenMontage",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.3,
+          "agt": 5.2,
+          "rev": 8.9,
+          "tkn": 1,
+          "wht": 6.1,
+          "edg": 6.1
+        },
+        "avg": 6.1,
+        "url": "https://github.com/calesthio/OpenMontage",
+        "desc": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 5"
+      },
+      {
+        "name": "WeKnora",
+        "source": "github",
+        "lane": "RAG & Knowle",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 6.1,
+          "rev": 4.6,
+          "tkn": 4,
+          "wht": 6.03,
+          "edg": 6.03
+        },
+        "avg": 6.03,
+        "url": "https://github.com/Tencent/WeKnora",
+        "desc": "Lane: RAG & Knowledge + Foundation Models"
+      },
+      {
+        "name": "openai-agents-python",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 7,
+          "rev": 4.6,
+          "tkn": 3,
+          "wht": 6,
+          "edg": 6
+        },
+        "avg": 6,
+        "url": "https://github.com/openai/openai-agents-python",
+        "desc": "Lane: AI Agents + Foundation Models"
+      },
+      {
+        "name": "voltagent",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.2,
+          "agt": 5.2,
+          "rev": 5.8,
+          "tkn": 3,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/VoltAgent/voltagent",
+        "desc": "Research: AI Agents, RAG & Knowledge"
+      },
+      {
+        "name": "pentagi",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 5,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/vxcontrol/pentagi",
+        "desc": "Research: Foundation Models, AI Agents, RAG & Knowledge"
+      },
+      {
+        "name": "byterover-cli",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 7.4,
+          "agt": 5.2,
+          "rev": 4.6,
+          "tkn": 6,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/campfirein/byterover-cli",
+        "desc": "Lane: AI Agents + RAG & Knowledge"
+      },
+      {
+        "name": "ralph",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 9,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 3,
+          "wht": 5.3,
+          "edg": 5.3
+        },
+        "avg": 5.3,
+        "url": "https://github.com/snarktank/ralph",
+        "desc": "Ralph is an autonomous AI agent loop that runs repeatedly until all PRD items are com"
+      },
+      {
+        "name": "agentic-ai-prompt-research",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 7,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 5,
+          "wht": 5.3,
+          "edg": 5.3
+        },
+        "avg": 5.3,
+        "url": "https://github.com/Leonxlnx/agentic-ai-prompt-research",
+        "desc": "Research into how agentic AI coding assistants work — reconstructed prompt patterns,"
+      },
+      {
+        "name": "Open-AutoGLM",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 6.1,
+          "rev": 4.6,
+          "tkn": 1,
+          "wht": 5.28,
+          "edg": 5.28
+        },
+        "avg": 5.28,
+        "url": "https://github.com/zai-org/Open-AutoGLM",
+        "desc": "An Open Phone Agent Model & Framework. Unlocking the AI Phone for Everyone"
+      },
+      {
+        "name": "koog",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 8.6,
+          "agt": 6.1,
+          "rev": 6.4,
+          "tkn": 0,
+          "wht": 5.28,
+          "edg": 5.28
+        },
+        "avg": 5.28,
+        "desc": "Lane: Foundation Models + AI Agents",
+        "url": "https://github.com/JetBrains/koog"
+      },
+      {
+        "name": "12-factor-agents",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 10,
+          "agt": 5.2,
+          "rev": 4.6,
+          "tkn": 1,
+          "wht": 5.2,
+          "edg": 5.2
+        },
+        "avg": 5.2,
+        "desc": "Lane: Foundation Models + AI Agents",
+        "url": "https://github.com/humanlayer/12-factor-agents"
+      },
+      {
+        "name": "mcp-crawl4ai-rag",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 7,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 3,
+          "wht": 4.8,
+          "edg": 4.8
+        },
+        "avg": 4.8,
+        "desc": "Lane: AI Agents + RAG & Knowledge",
+        "url": "https://github.com/coleam00/mcp-crawl4ai-rag"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-17",
+    "verdict": "BUILD",
+    "signals": [
+      {
+        "name": "ruflo",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 10,
+          "agt": 10,
+          "rev": 5.8,
+          "tkn": 8,
+          "wht": 8.45,
+          "edg": 8.45
+        },
+        "avg": 8.45,
+        "url": "https://github.com/ruvnet/ruflo",
+        "desc": "Lane: AI Agents + Foundation Models"
+      },
+      {
+        "name": "Anthropic-Cybersecurity-Skills",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9,
+          "agt": 7,
+          "rev": 7,
+          "tkn": 3,
+          "wht": 6.5,
+          "edg": 6.5
+        },
+        "avg": 6.5,
+        "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "hexstrike-ai",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 8.8,
+          "agt": 8.8,
+          "rev": 5.2,
+          "tkn": 3,
+          "wht": 6.45,
+          "edg": 6.45
+        },
+        "avg": 6.45,
+        "url": "https://github.com/0x4m4/hexstrike-ai",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "agenticSeek",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 7,
+          "rev": 7.1,
+          "tkn": 2,
+          "wht": 6.38,
+          "edg": 6.38
+        },
+        "avg": 6.38,
+        "url": "https://github.com/Fosowl/agenticSeek",
+        "desc": "Fully Local Manus AI. No APIs, No $200 monthly bills. Enjoy an autonomous agent that"
+      },
+      {
+        "name": "OpenMontage",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.3,
+          "agt": 5.2,
+          "rev": 8.9,
+          "tkn": 1,
+          "wht": 6.1,
+          "edg": 6.1
+        },
+        "avg": 6.1,
+        "url": "https://github.com/calesthio/OpenMontage",
+        "desc": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 5"
+      },
+      {
+        "name": "WeKnora",
+        "source": "github",
+        "lane": "RAG & Knowle",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 6.1,
+          "rev": 4.6,
+          "tkn": 4,
+          "wht": 6.03,
+          "edg": 6.03
+        },
+        "avg": 6.03,
+        "url": "https://github.com/Tencent/WeKnora",
+        "desc": "Lane: RAG & Knowledge + Foundation Models"
+      },
+      {
+        "name": "openai-agents-python",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 7,
+          "rev": 4.6,
+          "tkn": 3,
+          "wht": 6,
+          "edg": 6
+        },
+        "avg": 6,
+        "url": "https://github.com/openai/openai-agents-python",
+        "desc": "Lane: AI Agents + Foundation Models"
+      },
+      {
+        "name": "voltagent",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.2,
+          "agt": 5.2,
+          "rev": 5.8,
+          "tkn": 3,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/VoltAgent/voltagent",
+        "desc": "Research: AI Agents, RAG & Knowledge"
+      },
+      {
+        "name": "pentagi",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 5,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/vxcontrol/pentagi",
+        "desc": "Research: Foundation Models, AI Agents, RAG & Knowledge"
+      },
+      {
+        "name": "byterover-cli",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 7.4,
+          "agt": 5.2,
+          "rev": 4.6,
+          "tkn": 6,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/campfirein/byterover-cli",
+        "desc": "Lane: AI Agents + RAG & Knowledge"
+      },
+      {
+        "name": "osaurus",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 7.4,
+          "agt": 7.9,
+          "rev": 4.6,
+          "tkn": 2,
+          "wht": 5.47,
+          "edg": 5.47
+        },
+        "avg": 5.47,
+        "url": "https://github.com/osaurus-ai/osaurus",
+        "desc": "Own your AI. The native macOS harness for AI agents -- any model, persistent memory,"
+      },
+      {
+        "name": "ralph",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 9,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 3,
+          "wht": 5.3,
+          "edg": 5.3
+        },
+        "avg": 5.3,
+        "url": "https://github.com/snarktank/ralph",
+        "desc": "Ralph is an autonomous AI agent loop that runs repeatedly until all PRD items are com"
+      },
+      {
+        "name": "agentic-ai-prompt-research",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 7,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 5,
+          "wht": 5.3,
+          "edg": 5.3
+        },
+        "avg": 5.3,
+        "url": "https://github.com/Leonxlnx/agentic-ai-prompt-research",
+        "desc": "Research into how agentic AI coding assistants work — reconstructed prompt patterns,"
+      },
+      {
+        "name": "Open-AutoGLM",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 6.1,
+          "rev": 4.6,
+          "tkn": 1,
+          "wht": 5.28,
+          "edg": 5.28
+        },
+        "avg": 5.28,
+        "url": "https://github.com/zai-org/Open-AutoGLM",
+        "desc": "An Open Phone Agent Model & Framework. Unlocking the AI Phone for Everyone"
+      },
+      {
+        "name": "koog",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 8.6,
+          "agt": 6.1,
+          "rev": 6.4,
+          "tkn": 0,
+          "wht": 5.28,
+          "edg": 5.28
+        },
+        "avg": 5.28,
+        "desc": "Lane: Foundation Models + AI Agents",
+        "url": "https://github.com/JetBrains/koog"
+      },
+      {
+        "name": "12-factor-agents",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 10,
+          "agt": 5.2,
+          "rev": 4.6,
+          "tkn": 1,
+          "wht": 5.2,
+          "edg": 5.2
+        },
+        "avg": 5.2,
+        "desc": "Lane: Foundation Models + AI Agents",
+        "url": "https://github.com/humanlayer/12-factor-agents"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-16",
+    "verdict": "BUILD",
+    "signals": [
+      {
+        "name": "ruflo",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 10,
+          "agt": 10,
+          "rev": 5.8,
+          "tkn": 3,
+          "wht": 7.2,
+          "edg": 7.2
+        },
+        "avg": 7.2,
+        "url": "https://github.com/ruvnet/ruflo",
+        "desc": "Lane: AI Agents + Foundation Models"
+      },
+      {
+        "name": "Anthropic-Cybersecurity-Skills",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9,
+          "agt": 7,
+          "rev": 7,
+          "tkn": 3,
+          "wht": 6.5,
+          "edg": 6.5
+        },
+        "avg": 6.5,
+        "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "hexstrike-ai",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 8.8,
+          "agt": 8.8,
+          "rev": 5.2,
+          "tkn": 3,
+          "wht": 6.45,
+          "edg": 6.45
+        },
+        "avg": 6.45,
+        "url": "https://github.com/0x4m4/hexstrike-ai",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "agenticSeek",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 7,
+          "rev": 7.1,
+          "tkn": 2,
+          "wht": 6.38,
+          "edg": 6.38
+        },
+        "avg": 6.38,
+        "url": "https://github.com/Fosowl/agenticSeek",
+        "desc": "Fully Local Manus AI. No APIs, No $200 monthly bills. Enjoy an autonomous agent that"
+      },
+      {
+        "name": "OpenMontage",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.3,
+          "agt": 5.2,
+          "rev": 8.9,
+          "tkn": 1,
+          "wht": 6.1,
+          "edg": 6.1
+        },
+        "avg": 6.1,
+        "url": "https://github.com/calesthio/OpenMontage",
+        "desc": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 5"
+      },
+      {
+        "name": "WeKnora",
+        "source": "github",
+        "lane": "RAG & Knowle",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 6.1,
+          "rev": 4.6,
+          "tkn": 4,
+          "wht": 6.03,
+          "edg": 6.03
+        },
+        "avg": 6.03,
+        "url": "https://github.com/Tencent/WeKnora",
+        "desc": "Lane: RAG & Knowledge + Foundation Models"
+      },
+      {
+        "name": "openai-agents-python",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 7,
+          "rev": 4.6,
+          "tkn": 3,
+          "wht": 6,
+          "edg": 6
+        },
+        "avg": 6,
+        "url": "https://github.com/openai/openai-agents-python",
+        "desc": "Lane: AI Agents + Foundation Models"
+      },
+      {
+        "name": "voltagent",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.2,
+          "agt": 5.2,
+          "rev": 5.8,
+          "tkn": 3,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/VoltAgent/voltagent",
+        "desc": "Research: AI Agents, RAG & Knowledge"
+      },
+      {
+        "name": "pentagi",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 5,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/vxcontrol/pentagi",
+        "desc": "Research: Foundation Models, AI Agents, RAG & Knowledge"
+      },
+      {
+        "name": "byterover-cli",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 7.4,
+          "agt": 5.2,
+          "rev": 4.6,
+          "tkn": 6,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/campfirein/byterover-cli",
+        "desc": "Lane: AI Agents + RAG & Knowledge"
+      },
+      {
+        "name": "osaurus",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 7.4,
+          "agt": 7.9,
+          "rev": 4.6,
+          "tkn": 2,
+          "wht": 5.47,
+          "edg": 5.47
+        },
+        "avg": 5.47,
+        "url": "https://github.com/osaurus-ai/osaurus",
+        "desc": "Own your AI. The native macOS harness for AI agents -- any model, persistent memory,"
+      },
+      {
+        "name": "ralph",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 9,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 3,
+          "wht": 5.3,
+          "edg": 5.3
+        },
+        "avg": 5.3,
+        "url": "https://github.com/snarktank/ralph",
+        "desc": "Ralph is an autonomous AI agent loop that runs repeatedly until all PRD items are com"
+      },
+      {
+        "name": "agentic-ai-prompt-research",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 7,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 5,
+          "wht": 5.3,
+          "edg": 5.3
+        },
+        "avg": 5.3,
+        "url": "https://github.com/Leonxlnx/agentic-ai-prompt-research",
+        "desc": "Research into how agentic AI coding assistants work — reconstructed prompt patterns,"
+      },
+      {
+        "name": "Open-AutoGLM",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 6.1,
+          "rev": 4.6,
+          "tkn": 1,
+          "wht": 5.28,
+          "edg": 5.28
+        },
+        "avg": 5.28,
+        "url": "https://github.com/zai-org/Open-AutoGLM",
+        "desc": "An Open Phone Agent Model & Framework. Unlocking the AI Phone for Everyone"
+      },
+      {
+        "name": "koog",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 8.6,
+          "agt": 6.1,
+          "rev": 6.4,
+          "tkn": 0,
+          "wht": 5.28,
+          "edg": 5.28
+        },
+        "avg": 5.28,
+        "desc": "Lane: Foundation Models + AI Agents",
+        "url": "https://github.com/JetBrains/koog"
+      },
+      {
+        "name": "cc-connect",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 8.8,
+          "agt": 6.1,
+          "rev": 5.2,
+          "tkn": 1,
+          "wht": 5.28,
+          "edg": 5.28
+        },
+        "avg": 5.28,
+        "desc": "Lane: Foundation Models + AI Agents",
+        "url": "https://github.com/chenhg5/cc-connect"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-15",
+    "verdict": "BUILD",
+    "signals": [
+      {
+        "name": "ruflo",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 10,
+          "agt": 10,
+          "rev": 5.8,
+          "tkn": 3,
+          "wht": 7.2,
+          "edg": 7.2
+        },
+        "avg": 7.2,
+        "url": "https://github.com/ruvnet/ruflo",
+        "desc": "Lane: AI Agents + Foundation Models"
+      },
+      {
+        "name": "Anthropic-Cybersecurity-Skills",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9,
+          "agt": 7,
+          "rev": 7,
+          "tkn": 3,
+          "wht": 6.5,
+          "edg": 6.5
+        },
+        "avg": 6.5,
+        "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "hexstrike-ai",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 8.8,
+          "agt": 8.8,
+          "rev": 5.2,
+          "tkn": 3,
+          "wht": 6.45,
+          "edg": 6.45
+        },
+        "avg": 6.45,
+        "url": "https://github.com/0x4m4/hexstrike-ai",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "agenticSeek",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 7,
+          "rev": 7.1,
+          "tkn": 2,
+          "wht": 6.38,
+          "edg": 6.38
+        },
+        "avg": 6.38,
+        "url": "https://github.com/Fosowl/agenticSeek",
+        "desc": "Fully Local Manus AI. No APIs, No $200 monthly bills. Enjoy an autonomous agent that"
+      },
+      {
+        "name": "OpenMontage",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.3,
+          "agt": 5.2,
+          "rev": 8.9,
+          "tkn": 1,
+          "wht": 6.1,
+          "edg": 6.1
+        },
+        "avg": 6.1,
+        "url": "https://github.com/calesthio/OpenMontage",
+        "desc": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 5"
+      },
+      {
+        "name": "WeKnora",
+        "source": "github",
+        "lane": "RAG & Knowle",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 6.1,
+          "rev": 4.6,
+          "tkn": 4,
+          "wht": 6.03,
+          "edg": 6.03
+        },
+        "avg": 6.03,
+        "url": "https://github.com/Tencent/WeKnora",
+        "desc": "Lane: RAG & Knowledge + Foundation Models"
+      },
+      {
+        "name": "openai-agents-python",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 7,
+          "rev": 4.6,
+          "tkn": 3,
+          "wht": 6,
+          "edg": 6
+        },
+        "avg": 6,
+        "url": "https://github.com/openai/openai-agents-python",
+        "desc": "Lane: AI Agents + Foundation Models"
+      },
+      {
+        "name": "voltagent",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.2,
+          "agt": 5.2,
+          "rev": 5.8,
+          "tkn": 3,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/VoltAgent/voltagent",
+        "desc": "Research: AI Agents, RAG & Knowledge"
+      },
+      {
+        "name": "pentagi",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 5,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/vxcontrol/pentagi",
+        "desc": "Research: Foundation Models, AI Agents, RAG & Knowledge"
+      },
+      {
+        "name": "byterover-cli",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 7.4,
+          "agt": 5.2,
+          "rev": 4.6,
+          "tkn": 6,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/campfirein/byterover-cli",
+        "desc": "Lane: AI Agents + RAG & Knowledge"
+      },
+      {
+        "name": "osaurus",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 7.4,
+          "agt": 7.9,
+          "rev": 4.6,
+          "tkn": 2,
+          "wht": 5.47,
+          "edg": 5.47
+        },
+        "avg": 5.47,
+        "url": "https://github.com/osaurus-ai/osaurus",
+        "desc": "Own your AI. The native macOS harness for AI agents -- any model, persistent memory,"
+      },
+      {
+        "name": "ralph",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 9,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 3,
+          "wht": 5.3,
+          "edg": 5.3
+        },
+        "avg": 5.3,
+        "url": "https://github.com/snarktank/ralph",
+        "desc": "Ralph is an autonomous AI agent loop that runs repeatedly until all PRD items are com"
+      },
+      {
+        "name": "agentic-ai-prompt-research",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 7,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 5,
+          "wht": 5.3,
+          "edg": 5.3
+        },
+        "avg": 5.3,
+        "url": "https://github.com/Leonxlnx/agentic-ai-prompt-research",
+        "desc": "Research into how agentic AI coding assistants work — reconstructed prompt patterns,"
+      },
+      {
+        "name": "Open-AutoGLM",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 6.1,
+          "rev": 4.6,
+          "tkn": 1,
+          "wht": 5.28,
+          "edg": 5.28
+        },
+        "avg": 5.28,
+        "url": "https://github.com/zai-org/Open-AutoGLM",
+        "desc": "An Open Phone Agent Model & Framework. Unlocking the AI Phone for Everyone"
+      },
+      {
+        "name": "koog",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 8.6,
+          "agt": 6.1,
+          "rev": 6.4,
+          "tkn": 0,
+          "wht": 5.28,
+          "edg": 5.28
+        },
+        "avg": 5.28,
+        "desc": "Lane: Foundation Models + AI Agents",
+        "url": "https://github.com/JetBrains/koog"
+      },
+      {
+        "name": "cc-connect",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 8.8,
+          "agt": 6.1,
+          "rev": 5.2,
+          "tkn": 1,
+          "wht": 5.28,
+          "edg": 5.28
+        },
+        "avg": 5.28,
+        "desc": "Lane: Foundation Models + AI Agents",
+        "url": "https://github.com/chenhg5/cc-connect"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-14",
+    "verdict": "BUILD",
+    "signals": [
+      {
+        "name": "hexstrike-ai",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 8.8,
+          "agt": 8.8,
+          "rev": 5.2,
+          "tkn": 7,
+          "wht": 7.45,
+          "edg": 7.45
+        },
+        "avg": 7.45,
+        "url": "https://github.com/0x4m4/hexstrike-ai",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "ruflo",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 10,
+          "agt": 10,
+          "rev": 5.8,
+          "tkn": 3,
+          "wht": 7.2,
+          "edg": 7.2
+        },
+        "avg": 7.2,
+        "url": "https://github.com/ruvnet/ruflo",
+        "desc": "Lane: AI Agents + Foundation Models"
+      },
+      {
+        "name": "Anthropic-Cybersecurity-Skills",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9,
+          "agt": 7,
+          "rev": 7,
+          "tkn": 4,
+          "wht": 6.75,
+          "edg": 6.75
+        },
+        "avg": 6.75,
+        "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "agenticSeek",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 7,
+          "rev": 7.1,
+          "tkn": 2,
+          "wht": 6.38,
+          "edg": 6.38
+        },
+        "avg": 6.38,
+        "url": "https://github.com/Fosowl/agenticSeek",
+        "desc": "Fully Local Manus AI. No APIs, No $200 monthly bills. Enjoy an autonomous agent that"
+      },
+      {
+        "name": "OpenMontage",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.3,
+          "agt": 5.2,
+          "rev": 8.9,
+          "tkn": 1,
+          "wht": 6.1,
+          "edg": 6.1
+        },
+        "avg": 6.1,
+        "url": "https://github.com/calesthio/OpenMontage",
+        "desc": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 5"
+      },
+      {
+        "name": "WeKnora",
+        "source": "github",
+        "lane": "RAG & Knowle",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 6.1,
+          "rev": 4.6,
+          "tkn": 4,
+          "wht": 6.03,
+          "edg": 6.03
+        },
+        "avg": 6.03,
+        "url": "https://github.com/Tencent/WeKnora",
+        "desc": "Lane: RAG & Knowledge + Foundation Models"
+      },
+      {
+        "name": "openai-agents-python",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 7,
+          "rev": 4.6,
+          "tkn": 3,
+          "wht": 6,
+          "edg": 6
+        },
+        "avg": 6,
+        "url": "https://github.com/openai/openai-agents-python",
+        "desc": "Lane: AI Agents + Foundation Models"
+      },
+      {
+        "name": "voltagent",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.2,
+          "agt": 5.2,
+          "rev": 5.8,
+          "tkn": 3,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/VoltAgent/voltagent",
+        "desc": "Research: AI Agents, RAG & Knowledge"
+      },
+      {
+        "name": "pentagi",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 5,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/vxcontrol/pentagi",
+        "desc": "Research: Foundation Models, AI Agents, RAG & Knowledge"
+      },
+      {
+        "name": "byterover-cli",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 7.4,
+          "agt": 5.2,
+          "rev": 4.6,
+          "tkn": 6,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/campfirein/byterover-cli",
+        "desc": "Lane: AI Agents + RAG & Knowledge"
+      },
+      {
+        "name": "osaurus",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 7.4,
+          "agt": 7.9,
+          "rev": 4.6,
+          "tkn": 2,
+          "wht": 5.47,
+          "edg": 5.47
+        },
+        "avg": 5.47,
+        "url": "https://github.com/osaurus-ai/osaurus",
+        "desc": "Own your AI. The native macOS harness for AI agents -- any model, persistent memory,"
+      },
+      {
+        "name": "ralph",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 9,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 3,
+          "wht": 5.3,
+          "edg": 5.3
+        },
+        "avg": 5.3,
+        "url": "https://github.com/snarktank/ralph",
+        "desc": "Ralph is an autonomous AI agent loop that runs repeatedly until all PRD items are com"
+      },
+      {
+        "name": "agentic-ai-prompt-research",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 7,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 5,
+          "wht": 5.3,
+          "edg": 5.3
+        },
+        "avg": 5.3,
+        "url": "https://github.com/Leonxlnx/agentic-ai-prompt-research",
+        "desc": "Research into how agentic AI coding assistants work — reconstructed prompt patterns,"
+      },
+      {
+        "name": "Open-AutoGLM",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 6.1,
+          "rev": 4.6,
+          "tkn": 1,
+          "wht": 5.28,
+          "edg": 5.28
+        },
+        "avg": 5.28,
+        "url": "https://github.com/zai-org/Open-AutoGLM",
+        "desc": "An Open Phone Agent Model & Framework. Unlocking the AI Phone for Everyone"
+      },
+      {
+        "name": "koog",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 8.6,
+          "agt": 6.1,
+          "rev": 6.4,
+          "tkn": 0,
+          "wht": 5.28,
+          "edg": 5.28
+        },
+        "avg": 5.28,
+        "desc": "Lane: Foundation Models + AI Agents",
+        "url": "https://github.com/JetBrains/koog"
+      },
+      {
+        "name": "cc-connect",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 8.8,
+          "agt": 6.1,
+          "rev": 5.2,
+          "tkn": 1,
+          "wht": 5.28,
+          "edg": 5.28
+        },
+        "avg": 5.28,
+        "desc": "Lane: Foundation Models + AI Agents",
+        "url": "https://github.com/chenhg5/cc-connect"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-13",
+    "verdict": "BUILD",
+    "signals": [
+      {
+        "name": "hexstrike-ai",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 8.8,
+          "agt": 8.8,
+          "rev": 5.2,
+          "tkn": 8,
+          "wht": 7.7,
+          "edg": 7.7
+        },
+        "avg": 7.7,
+        "url": "https://github.com/0x4m4/hexstrike-ai",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "ruflo",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 10,
+          "agt": 10,
+          "rev": 5.8,
+          "tkn": 3,
+          "wht": 7.2,
+          "edg": 7.2
+        },
+        "avg": 7.2,
+        "url": "https://github.com/ruvnet/ruflo",
+        "desc": "Lane: AI Agents + Foundation Models"
+      },
+      {
+        "name": "Anthropic-Cybersecurity-Skills",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9,
+          "agt": 7,
+          "rev": 7,
+          "tkn": 4,
+          "wht": 6.75,
+          "edg": 6.75
+        },
+        "avg": 6.75,
+        "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "agenticSeek",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 7,
+          "rev": 7.1,
+          "tkn": 2,
+          "wht": 6.38,
+          "edg": 6.38
+        },
+        "avg": 6.38,
+        "url": "https://github.com/Fosowl/agenticSeek",
+        "desc": "Fully Local Manus AI. No APIs, No $200 monthly bills. Enjoy an autonomous agent that"
+      },
+      {
+        "name": "OpenMontage",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.3,
+          "agt": 5.2,
+          "rev": 8.9,
+          "tkn": 1,
+          "wht": 6.1,
+          "edg": 6.1
+        },
+        "avg": 6.1,
+        "url": "https://github.com/calesthio/OpenMontage",
+        "desc": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 5"
+      },
+      {
+        "name": "WeKnora",
+        "source": "github",
+        "lane": "RAG & Knowle",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 6.1,
+          "rev": 4.6,
+          "tkn": 4,
+          "wht": 6.03,
+          "edg": 6.03
+        },
+        "avg": 6.03,
+        "url": "https://github.com/Tencent/WeKnora",
+        "desc": "Lane: RAG & Knowledge + Foundation Models"
+      },
+      {
+        "name": "openai-agents-python",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 7,
+          "rev": 4.6,
+          "tkn": 3,
+          "wht": 6,
+          "edg": 6
+        },
+        "avg": 6,
+        "url": "https://github.com/openai/openai-agents-python",
+        "desc": "Lane: AI Agents + Foundation Models"
+      },
+      {
+        "name": "voltagent",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.2,
+          "agt": 5.2,
+          "rev": 5.8,
+          "tkn": 3,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/VoltAgent/voltagent",
+        "desc": "Research: AI Agents, RAG & Knowledge"
+      },
+      {
+        "name": "pentagi",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 5,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/vxcontrol/pentagi",
+        "desc": "Research: Foundation Models, AI Agents, RAG & Knowledge"
+      },
+      {
+        "name": "byterover-cli",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 7.4,
+          "agt": 5.2,
+          "rev": 4.6,
+          "tkn": 6,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/campfirein/byterover-cli",
+        "desc": "Lane: AI Agents + RAG & Knowledge"
+      },
+      {
+        "name": "osaurus",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 7.4,
+          "agt": 7.9,
+          "rev": 4.6,
+          "tkn": 2,
+          "wht": 5.47,
+          "edg": 5.47
+        },
+        "avg": 5.47,
+        "url": "https://github.com/osaurus-ai/osaurus",
+        "desc": "Own your AI. The native macOS harness for AI agents -- any model, persistent memory,"
+      },
+      {
+        "name": "ralph",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 9,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 3,
+          "wht": 5.3,
+          "edg": 5.3
+        },
+        "avg": 5.3,
+        "url": "https://github.com/snarktank/ralph",
+        "desc": "Ralph is an autonomous AI agent loop that runs repeatedly until all PRD items are com"
+      },
+      {
+        "name": "agentic-ai-prompt-research",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 7,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 5,
+          "wht": 5.3,
+          "edg": 5.3
+        },
+        "avg": 5.3,
+        "url": "https://github.com/Leonxlnx/agentic-ai-prompt-research",
+        "desc": "Research into how agentic AI coding assistants work — reconstructed prompt patterns,"
+      },
+      {
+        "name": "Open-AutoGLM",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 6.1,
+          "rev": 4.6,
+          "tkn": 1,
+          "wht": 5.28,
+          "edg": 5.28
+        },
+        "avg": 5.28,
+        "url": "https://github.com/zai-org/Open-AutoGLM",
+        "desc": "An Open Phone Agent Model & Framework. Unlocking the AI Phone for Everyone"
+      },
+      {
+        "name": "koog",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 8.6,
+          "agt": 6.1,
+          "rev": 6.4,
+          "tkn": 0,
+          "wht": 5.28,
+          "edg": 5.28
+        },
+        "avg": 5.28,
+        "desc": "Lane: Foundation Models + AI Agents",
+        "url": "https://github.com/JetBrains/koog"
+      },
+      {
+        "name": "cc-connect",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 8.8,
+          "agt": 6.1,
+          "rev": 5.2,
+          "tkn": 1,
+          "wht": 5.28,
+          "edg": 5.28
+        },
+        "avg": 5.28,
+        "desc": "Lane: Foundation Models + AI Agents",
+        "url": "https://github.com/chenhg5/cc-connect"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-12",
+    "verdict": "BUILD",
+    "signals": [
+      {
+        "name": "ruflo",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 10,
+          "agt": 10,
+          "rev": 5.8,
+          "tkn": 0,
+          "wht": 6.45,
+          "edg": 6.45
+        },
+        "avg": 6.45,
+        "url": "https://github.com/ruvnet/ruflo",
+        "desc": "Lane: AI Agents + Foundation Models"
+      },
+      {
+        "name": "agenticSeek",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 7,
+          "rev": 7.1,
+          "tkn": 0,
+          "wht": 5.88,
+          "edg": 5.88
+        },
+        "avg": 5.88,
+        "url": "https://github.com/Fosowl/agenticSeek",
+        "desc": "Fully Local Manus AI. No APIs, No $200 monthly bills. Enjoy an autonomous agent that"
+      },
+      {
+        "name": "OpenMontage",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.3,
+          "agt": 5.2,
+          "rev": 8.9,
+          "tkn": 0,
+          "wht": 5.85,
+          "edg": 5.85
+        },
+        "avg": 5.85,
+        "url": "https://github.com/calesthio/OpenMontage",
+        "desc": "World's first open-source, agentic video production system. 11 pipelines, 49 tools, 4"
+      },
+      {
+        "name": "Anthropic-Cybersecurity-Skills",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9,
+          "agt": 7,
+          "rev": 7,
+          "tkn": 0,
+          "wht": 5.75,
+          "edg": 5.75
+        },
+        "avg": 5.75,
+        "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "hexstrike-ai",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 8.8,
+          "agt": 8.8,
+          "rev": 5.2,
+          "tkn": 0,
+          "wht": 5.7,
+          "edg": 5.7
+        },
+        "avg": 5.7,
+        "url": "https://github.com/0x4m4/hexstrike-ai",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "mcp-use",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.2,
+          "agt": 7,
+          "rev": 5.8,
+          "tkn": 0,
+          "wht": 5.5,
+          "edg": 5.5
+        },
+        "avg": 5.5,
+        "url": "https://github.com/mcp-use/mcp-use",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "agent-framework",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 8.8,
+          "agt": 7.9,
+          "rev": 5.2,
+          "tkn": 0,
+          "wht": 5.48,
+          "edg": 5.48
+        },
+        "avg": 5.48,
+        "url": "https://github.com/microsoft/agent-framework",
+        "desc": "A framework for building, orchestrating and deploying AI agents and multi-agent workf"
+      },
+      {
+        "name": "koog",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 8.6,
+          "agt": 6.1,
+          "rev": 6.4,
+          "tkn": 0,
+          "wht": 5.28,
+          "edg": 5.28
+        },
+        "avg": 5.28,
+        "desc": "Lane: Foundation Models + AI Agents",
+        "url": "https://github.com/JetBrains/koog"
+      },
+      {
+        "name": "openai-agents-python",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 7,
+          "rev": 4.6,
+          "tkn": 0,
+          "wht": 5.25,
+          "edg": 5.25
+        },
+        "avg": 5.25,
+        "desc": "Lane: AI Agents + Foundation Models",
+        "url": "https://github.com/openai/openai-agents-python"
+      },
+      {
+        "name": "zeroclaw",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 10,
+          "agt": 5.2,
+          "rev": 5.8,
+          "tkn": 0,
+          "wht": 5.25,
+          "edg": 5.25
+        },
+        "avg": 5.25,
+        "url": "https://github.com/zeroclaw-labs/zeroclaw",
+        "desc": "Fast, small, and fully autonomous AI personal assistant infrastructure, ANY OS, ANY P"
+      },
+      {
+        "name": "Agentic Copyright, Data Scraping &a",
+        "source": "arxiv",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 4.4,
+          "agt": 7,
+          "rev": 4.6,
+          "tkn": 5,
+          "wht": 5.25,
+          "edg": 5.25
+        },
+        "avg": 5.25,
+        "desc": "Agentic Copyright, Data Scraping &amp; AI Governance: Toward a Coasean Bargain in the"
+      },
+      {
+        "name": "voltagent",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 9.2,
+          "agt": 5.2,
+          "rev": 5.8,
+          "tkn": 0,
+          "wht": 5.05,
+          "edg": 5.05
+        },
+        "avg": 5.05,
+        "url": "https://github.com/VoltAgent/voltagent",
+        "desc": "AI Agent Engineering Platform built on an Open Source TypeScript AI Agent Framework"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-11",
+    "verdict": "BUILD",
+    "signals": [
+      {
+        "name": "ruflo",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 10,
+          "agt": 10,
+          "rev": 5.8,
+          "tkn": 3,
+          "wht": 7.2,
+          "edg": 7.2
+        },
+        "avg": 7.2,
+        "url": "https://github.com/ruvnet/ruflo",
+        "desc": "Lane: AI Agents + Foundation Models"
+      },
+      {
+        "name": "Anthropic-Cybersecurity-Skills",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9,
+          "agt": 7,
+          "rev": 7,
+          "tkn": 4,
+          "wht": 6.75,
+          "edg": 6.75
+        },
+        "avg": 6.75,
+        "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "hexstrike-ai",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 8.8,
+          "agt": 8.8,
+          "rev": 5.2,
+          "tkn": 3,
+          "wht": 6.45,
+          "edg": 6.45
+        },
+        "avg": 6.45,
+        "url": "https://github.com/0x4m4/hexstrike-ai",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "agenticSeek",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 7,
+          "rev": 7.1,
+          "tkn": 2,
+          "wht": 6.38,
+          "edg": 6.38
+        },
+        "avg": 6.38,
+        "url": "https://github.com/Fosowl/agenticSeek",
+        "desc": "Fully Local Manus AI. No APIs, No $200 monthly bills. Enjoy an autonomous agent that"
+      },
+      {
+        "name": "OpenMontage",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.3,
+          "agt": 5.2,
+          "rev": 8.9,
+          "tkn": 1,
+          "wht": 6.1,
+          "edg": 6.1
+        },
+        "avg": 6.1,
+        "url": "https://github.com/calesthio/OpenMontage",
+        "desc": "World's first open-source, agentic video production system. 11 pipelines, 49 tools, 4"
+      },
+      {
+        "name": "WeKnora",
+        "source": "github",
+        "lane": "RAG & Knowle",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 6.1,
+          "rev": 4.6,
+          "tkn": 4,
+          "wht": 6.03,
+          "edg": 6.03
+        },
+        "avg": 6.03,
+        "url": "https://github.com/Tencent/WeKnora",
+        "desc": "Lane: RAG & Knowledge + Foundation Models"
+      },
+      {
+        "name": "openai-agents-python",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 7,
+          "rev": 4.6,
+          "tkn": 3,
+          "wht": 6,
+          "edg": 6
+        },
+        "avg": 6,
+        "url": "https://github.com/openai/openai-agents-python",
+        "desc": "Lane: AI Agents + Foundation Models"
+      },
+      {
+        "name": "voltagent",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.2,
+          "agt": 5.2,
+          "rev": 5.8,
+          "tkn": 3,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/VoltAgent/voltagent",
+        "desc": "Research: AI Agents, RAG & Knowledge"
+      },
+      {
+        "name": "pentagi",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 5,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/vxcontrol/pentagi",
+        "desc": "Research: Foundation Models, AI Agents, RAG & Knowledge"
+      },
+      {
+        "name": "byterover-cli",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 7.4,
+          "agt": 5.2,
+          "rev": 4.6,
+          "tkn": 6,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/campfirein/byterover-cli",
+        "desc": "Lane: AI Agents + RAG & Knowledge"
+      },
+      {
+        "name": "osaurus",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 7.4,
+          "agt": 7.9,
+          "rev": 4.6,
+          "tkn": 2,
+          "wht": 5.47,
+          "edg": 5.47
+        },
+        "avg": 5.47,
+        "url": "https://github.com/osaurus-ai/osaurus",
+        "desc": "Own your AI. The native macOS harness for AI agents -- any model, persistent memory,"
+      },
+      {
+        "name": "ralph",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 9,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 3,
+          "wht": 5.3,
+          "edg": 5.3
+        },
+        "avg": 5.3,
+        "url": "https://github.com/snarktank/ralph",
+        "desc": "Ralph is an autonomous AI agent loop that runs repeatedly until all PRD items are com"
+      },
+      {
+        "name": "agentic-ai-prompt-research",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 7,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 5,
+          "wht": 5.3,
+          "edg": 5.3
+        },
+        "avg": 5.3,
+        "url": "https://github.com/Leonxlnx/agentic-ai-prompt-research",
+        "desc": "Research into how agentic AI coding assistants work — reconstructed prompt patterns,"
+      },
+      {
+        "name": "Open-AutoGLM",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 6.1,
+          "rev": 4.6,
+          "tkn": 1,
+          "wht": 5.28,
+          "edg": 5.28
+        },
+        "avg": 5.28,
+        "url": "https://github.com/zai-org/Open-AutoGLM",
+        "desc": "An Open Phone Agent Model & Framework. Unlocking the AI Phone for Everyone"
+      },
+      {
+        "name": "koog",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 8.6,
+          "agt": 6.1,
+          "rev": 6.4,
+          "tkn": 0,
+          "wht": 5.28,
+          "edg": 5.28
+        },
+        "avg": 5.28,
+        "desc": "Lane: Foundation Models + AI Agents",
+        "url": "https://github.com/JetBrains/koog"
+      },
+      {
+        "name": "Agentic Copyright, Data Scraping &a",
+        "source": "arxiv",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 4.4,
+          "agt": 7,
+          "rev": 4.6,
+          "tkn": 5,
+          "wht": 5.25,
+          "edg": 5.25
+        },
+        "avg": 5.25,
+        "desc": "Agentic Copyright, Data Scraping &amp; AI Governance: Toward a Coasean Bargain in the"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-10",
+    "verdict": "BUILD",
+    "signals": [
+      {
+        "name": "hexstrike-ai",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 8.8,
+          "agt": 8.8,
+          "rev": 5.2,
+          "tkn": 7,
+          "wht": 7.45,
+          "edg": 7.45
+        },
+        "avg": 7.45,
+        "url": "https://github.com/0x4m4/hexstrike-ai",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "ruflo",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 10,
+          "agt": 10,
+          "rev": 5.8,
+          "tkn": 3,
+          "wht": 7.2,
+          "edg": 7.2
+        },
+        "avg": 7.2,
+        "url": "https://github.com/ruvnet/ruflo",
+        "desc": "Lane: AI Agents + Foundation Models"
+      },
+      {
+        "name": "Anthropic-Cybersecurity-Skills",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9,
+          "agt": 7,
+          "rev": 7,
+          "tkn": 4,
+          "wht": 6.75,
+          "edg": 6.75
+        },
+        "avg": 6.75,
+        "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "agenticSeek",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 7,
+          "rev": 7.1,
+          "tkn": 2,
+          "wht": 6.38,
+          "edg": 6.38
+        },
+        "avg": 6.38,
+        "url": "https://github.com/Fosowl/agenticSeek",
+        "desc": "Fully Local Manus AI. No APIs, No $200 monthly bills. Enjoy an autonomous agent that"
+      },
+      {
+        "name": "WeKnora",
+        "source": "github",
+        "lane": "RAG & Knowle",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 6.1,
+          "rev": 4.6,
+          "tkn": 4,
+          "wht": 6.03,
+          "edg": 6.03
+        },
+        "avg": 6.03,
+        "url": "https://github.com/Tencent/WeKnora",
+        "desc": "Lane: RAG & Knowledge + Foundation Models"
+      },
+      {
+        "name": "openai-agents-python",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 7,
+          "rev": 4.6,
+          "tkn": 3,
+          "wht": 6,
+          "edg": 6
+        },
+        "avg": 6,
+        "url": "https://github.com/openai/openai-agents-python",
+        "desc": "Lane: AI Agents + Foundation Models"
+      },
+      {
+        "name": "voltagent",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.2,
+          "agt": 5.2,
+          "rev": 5.8,
+          "tkn": 3,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/VoltAgent/voltagent",
+        "desc": "Research: AI Agents, RAG & Knowledge"
+      },
+      {
+        "name": "byterover-cli",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 7.4,
+          "agt": 5.2,
+          "rev": 4.6,
+          "tkn": 6,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/campfirein/byterover-cli",
+        "desc": "Lane: AI Agents + RAG & Knowledge"
+      },
+      {
+        "name": "mcp-use",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.2,
+          "agt": 7,
+          "rev": 5.8,
+          "tkn": 1,
+          "wht": 5.75,
+          "edg": 5.75
+        },
+        "avg": 5.75,
+        "url": "https://github.com/mcp-use/mcp-use",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "agent-framework",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 8.8,
+          "agt": 7.9,
+          "rev": 5.2,
+          "tkn": 1,
+          "wht": 5.73,
+          "edg": 5.73
+        },
+        "avg": 5.73,
+        "url": "https://github.com/microsoft/agent-framework",
+        "desc": "A framework for building, orchestrating and deploying AI agents and multi-agent workf"
+      },
+      {
+        "name": "osaurus",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 7.4,
+          "agt": 7.9,
+          "rev": 4.6,
+          "tkn": 2,
+          "wht": 5.47,
+          "edg": 5.47
+        },
+        "avg": 5.47,
+        "url": "https://github.com/osaurus-ai/osaurus",
+        "desc": "Own your AI. The native macOS harness for AI agents -- any model, persistent memory,"
+      },
+      {
+        "name": "ralph",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 9,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 3,
+          "wht": 5.3,
+          "edg": 5.3
+        },
+        "avg": 5.3,
+        "url": "https://github.com/snarktank/ralph",
+        "desc": "Ralph is an autonomous AI agent loop that runs repeatedly until all PRD items are com"
+      },
+      {
+        "name": "agentic-ai-prompt-research",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 7,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 5,
+          "wht": 5.3,
+          "edg": 5.3
+        },
+        "avg": 5.3,
+        "url": "https://github.com/Leonxlnx/agentic-ai-prompt-research",
+        "desc": "Research into how agentic AI coding assistants work — reconstructed prompt patterns,"
+      },
+      {
+        "name": "Open-AutoGLM",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 6.1,
+          "rev": 4.6,
+          "tkn": 1,
+          "wht": 5.28,
+          "edg": 5.28
+        },
+        "avg": 5.28,
+        "url": "https://github.com/zai-org/Open-AutoGLM",
+        "desc": "An Open Phone Agent Model & Framework. Unlocking the AI Phone for Everyone"
+      },
+      {
+        "name": "koog",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 8.6,
+          "agt": 6.1,
+          "rev": 6.4,
+          "tkn": 0,
+          "wht": 5.28,
+          "edg": 5.28
+        },
+        "avg": 5.28,
+        "desc": "Lane: Foundation Models + AI Agents",
+        "url": "https://github.com/JetBrains/koog"
+      },
+      {
+        "name": "Agentic Copyright, Data Scraping &a",
+        "source": "arxiv",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 4.4,
+          "agt": 7,
+          "rev": 4.6,
+          "tkn": 5,
+          "wht": 5.25,
+          "edg": 5.25
+        },
+        "avg": 5.25,
+        "desc": "Agentic Copyright, Data Scraping &amp; AI Governance: Toward a Coasean Bargain in the"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-09",
+    "verdict": "BUILD",
+    "signals": [
+      {
+        "name": "hexstrike-ai",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 8.8,
+          "agt": 8.8,
+          "rev": 5.2,
+          "tkn": 7,
+          "wht": 7.45,
+          "edg": 7.45
+        },
+        "avg": 7.45,
+        "url": "https://github.com/0x4m4/hexstrike-ai",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "agenticSeek",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 7,
+          "rev": 7.1,
+          "tkn": 6,
+          "wht": 7.38,
+          "edg": 7.38
+        },
+        "avg": 7.38,
+        "url": "https://github.com/Fosowl/agenticSeek",
+        "desc": "arXiv: AgentOpt v0.1 Technical Report: Client-Side Optimization for LLM-... https://arxiv.org/abs/2604.06296"
+      },
+      {
+        "name": "ruflo",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 10,
+          "agt": 10,
+          "rev": 5.8,
+          "tkn": 3,
+          "wht": 7.2,
+          "edg": 7.2
+        },
+        "avg": 7.2,
+        "url": "https://github.com/ruvnet/ruflo",
+        "desc": "Lane: AI Agents + Foundation Models"
+      },
+      {
+        "name": "Anthropic-Cybersecurity-Skills",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9,
+          "agt": 7,
+          "rev": 7,
+          "tkn": 4,
+          "wht": 6.75,
+          "edg": 6.75
+        },
+        "avg": 6.75,
+        "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "WeKnora",
+        "source": "github",
+        "lane": "RAG & Knowle",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 6.1,
+          "rev": 4.6,
+          "tkn": 4,
+          "wht": 6.03,
+          "edg": 6.03
+        },
+        "avg": 6.03,
+        "url": "https://github.com/Tencent/WeKnora",
+        "desc": "Lane: RAG & Knowledge + Foundation Models"
+      },
+      {
+        "name": "openai-agents-python",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 7,
+          "rev": 4.6,
+          "tkn": 3,
+          "wht": 6,
+          "edg": 6
+        },
+        "avg": 6,
+        "url": "https://github.com/openai/openai-agents-python",
+        "desc": "Lane: AI Agents + Foundation Models"
+      },
+      {
+        "name": "voltagent",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.2,
+          "agt": 5.2,
+          "rev": 5.8,
+          "tkn": 3,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/VoltAgent/voltagent",
+        "desc": "Research: AI Agents, RAG & Knowledge"
+      },
+      {
+        "name": "byterover-cli",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 7.4,
+          "agt": 5.2,
+          "rev": 4.6,
+          "tkn": 6,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/campfirein/byterover-cli",
+        "desc": "Lane: AI Agents + RAG & Knowledge"
+      },
+      {
+        "name": "graphify",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 5.2,
+          "rev": 4.6,
+          "tkn": 4,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/safishamsi/graphify",
+        "desc": "Lane: Foundation Models + RAG & Knowledge"
+      },
+      {
+        "name": "mcp-use",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.2,
+          "agt": 7,
+          "rev": 5.8,
+          "tkn": 1,
+          "wht": 5.75,
+          "edg": 5.75
+        },
+        "avg": 5.75,
+        "url": "https://github.com/mcp-use/mcp-use",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "osaurus",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 7.4,
+          "agt": 7.9,
+          "rev": 4.6,
+          "tkn": 2,
+          "wht": 5.47,
+          "edg": 5.47
+        },
+        "avg": 5.47,
+        "url": "https://github.com/osaurus-ai/osaurus",
+        "desc": "Own your AI. The native macOS harness for AI agents -- any model, persistent memory,"
+      },
+      {
+        "name": "ralph",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 9,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 3,
+          "wht": 5.3,
+          "edg": 5.3
+        },
+        "avg": 5.3,
+        "url": "https://github.com/snarktank/ralph",
+        "desc": "Ralph is an autonomous AI agent loop that runs repeatedly until all PRD items are com"
+      },
+      {
+        "name": "agentic-ai-prompt-research",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 7,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 5,
+          "wht": 5.3,
+          "edg": 5.3
+        },
+        "avg": 5.3,
+        "url": "https://github.com/Leonxlnx/agentic-ai-prompt-research",
+        "desc": "Research into how agentic AI coding assistants work — reconstructed prompt patterns,"
+      },
+      {
+        "name": "Open-AutoGLM",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 6.1,
+          "rev": 4.6,
+          "tkn": 1,
+          "wht": 5.28,
+          "edg": 5.28
+        },
+        "avg": 5.28,
+        "url": "https://github.com/zai-org/Open-AutoGLM",
+        "desc": "An Open Phone Agent Model & Framework. Unlocking the AI Phone for Everyone"
+      },
+      {
+        "name": "koog",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 8.6,
+          "agt": 6.1,
+          "rev": 6.4,
+          "tkn": 0,
+          "wht": 5.28,
+          "edg": 5.28
+        },
+        "avg": 5.28,
+        "desc": "Lane: Foundation Models + AI Agents",
+        "url": "https://github.com/JetBrains/koog"
+      },
+      {
+        "name": "12-factor-agents",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 10,
+          "agt": 5.2,
+          "rev": 4.6,
+          "tkn": 1,
+          "wht": 5.2,
+          "edg": 5.2
+        },
+        "avg": 5.2,
+        "desc": "Lane: Foundation Models + AI Agents",
+        "url": "https://github.com/humanlayer/12-factor-agents"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-08",
+    "verdict": "BUILD",
+    "signals": [
+      {
+        "name": "ruflo",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 10,
+          "agt": 10,
+          "rev": 5.8,
+          "tkn": 7,
+          "wht": 8.2,
+          "edg": 8.2
+        },
+        "avg": 8.2,
+        "url": "https://github.com/ruvnet/ruflo",
+        "desc": "Lane: AI Agents + Foundation Models"
+      },
+      {
+        "name": "Anthropic-Cybersecurity-Skills",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9,
+          "agt": 7,
+          "rev": 7,
+          "tkn": 4,
+          "wht": 6.75,
+          "edg": 6.75
+        },
+        "avg": 6.75,
+        "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "MemMachine",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 8,
+          "agt": 7,
+          "rev": 4,
+          "tkn": 8,
+          "wht": 6.75,
+          "edg": 6.75
+        },
+        "avg": 6.75,
+        "url": "https://github.com/MemMachine/MemMachine",
+        "desc": "Lane: AI Agents + RAG & Knowledge"
+      },
+      {
+        "name": "hexstrike-ai",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 8.8,
+          "agt": 8.8,
+          "rev": 5.2,
+          "tkn": 3,
+          "wht": 6.45,
+          "edg": 6.45
+        },
+        "avg": 6.45,
+        "url": "https://github.com/0x4m4/hexstrike-ai",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "agenticSeek",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 7,
+          "rev": 7.1,
+          "tkn": 2,
+          "wht": 6.38,
+          "edg": 6.38
+        },
+        "avg": 6.38,
+        "url": "https://github.com/Fosowl/agenticSeek",
+        "desc": "Fully Local Manus AI. No APIs, No $200 monthly bills. Enjoy an autonomous agent that"
+      },
+      {
+        "name": "WeKnora",
+        "source": "github",
+        "lane": "RAG & Knowle",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 6.1,
+          "rev": 4.6,
+          "tkn": 4,
+          "wht": 6.03,
+          "edg": 6.03
+        },
+        "avg": 6.03,
+        "url": "https://github.com/Tencent/WeKnora",
+        "desc": "Lane: RAG & Knowledge + Foundation Models"
+      },
+      {
+        "name": "openai-agents-python",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 7,
+          "rev": 4.6,
+          "tkn": 3,
+          "wht": 6,
+          "edg": 6
+        },
+        "avg": 6,
+        "url": "https://github.com/openai/openai-agents-python",
+        "desc": "Lane: AI Agents + Foundation Models"
+      },
+      {
+        "name": "voltagent",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.2,
+          "agt": 5.2,
+          "rev": 5.8,
+          "tkn": 3,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/VoltAgent/voltagent",
+        "desc": "Research: AI Agents, RAG & Knowledge"
+      },
+      {
+        "name": "byterover-cli",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 7.4,
+          "agt": 5.2,
+          "rev": 4.6,
+          "tkn": 6,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/campfirein/byterover-cli",
+        "desc": "Lane: AI Agents + RAG & Knowledge"
+      },
+      {
+        "name": "mcp-use",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.2,
+          "agt": 7,
+          "rev": 5.8,
+          "tkn": 1,
+          "wht": 5.75,
+          "edg": 5.75
+        },
+        "avg": 5.75,
+        "url": "https://github.com/mcp-use/mcp-use",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "osaurus",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 7.4,
+          "agt": 7.9,
+          "rev": 4.6,
+          "tkn": 2,
+          "wht": 5.47,
+          "edg": 5.47
+        },
+        "avg": 5.47,
+        "url": "https://github.com/osaurus-ai/osaurus",
+        "desc": "Own your AI. The native macOS harness for AI agents -- any model, persistent memory,"
+      },
+      {
+        "name": "ralph",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 9,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 3,
+          "wht": 5.3,
+          "edg": 5.3
+        },
+        "avg": 5.3,
+        "url": "https://github.com/snarktank/ralph",
+        "desc": "Ralph is an autonomous AI agent loop that runs repeatedly until all PRD items are com"
+      },
+      {
+        "name": "agentic-ai-prompt-research",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 7,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 5,
+          "wht": 5.3,
+          "edg": 5.3
+        },
+        "avg": 5.3,
+        "url": "https://github.com/Leonxlnx/agentic-ai-prompt-research",
+        "desc": "Research into how agentic AI coding assistants work — reconstructed prompt patterns,"
+      },
+      {
+        "name": "Open-AutoGLM",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 6.1,
+          "rev": 4.6,
+          "tkn": 1,
+          "wht": 5.28,
+          "edg": 5.28
+        },
+        "avg": 5.28,
+        "url": "https://github.com/zai-org/Open-AutoGLM",
+        "desc": "An Open Phone Agent Model & Framework. Unlocking the AI Phone for Everyone"
+      },
+      {
+        "name": "koog",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 8.6,
+          "agt": 6.1,
+          "rev": 6.4,
+          "tkn": 0,
+          "wht": 5.28,
+          "edg": 5.28
+        },
+        "avg": 5.28,
+        "desc": "Lane: Foundation Models + AI Agents",
+        "url": "https://github.com/JetBrains/koog"
+      },
+      {
+        "name": "12-factor-agents",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 10,
+          "agt": 5.2,
+          "rev": 4.6,
+          "tkn": 1,
+          "wht": 5.2,
+          "edg": 5.2
+        },
+        "avg": 5.2,
+        "desc": "Lane: Foundation Models + AI Agents",
+        "url": "https://github.com/humanlayer/12-factor-agents"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-07",
+    "verdict": "BUILD",
+    "signals": [
+      {
+        "name": "ruflo",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 10,
+          "agt": 10,
+          "rev": 5.8,
+          "tkn": 3,
+          "wht": 7.2,
+          "edg": 7.2
+        },
+        "avg": 7.2,
+        "url": "https://github.com/ruvnet/ruflo",
+        "desc": "Lane: AI Agents + Foundation Models"
+      },
+      {
+        "name": "Anthropic-Cybersecurity-Skills",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9,
+          "agt": 7,
+          "rev": 7,
+          "tkn": 4,
+          "wht": 6.75,
+          "edg": 6.75
+        },
+        "avg": 6.75,
+        "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "hexstrike-ai",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 8.8,
+          "agt": 8.8,
+          "rev": 5.2,
+          "tkn": 3,
+          "wht": 6.45,
+          "edg": 6.45
+        },
+        "avg": 6.45,
+        "url": "https://github.com/0x4m4/hexstrike-ai",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "agenticSeek",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 7,
+          "rev": 7.1,
+          "tkn": 2,
+          "wht": 6.38,
+          "edg": 6.38
+        },
+        "avg": 6.38,
+        "url": "https://github.com/Fosowl/agenticSeek",
+        "desc": "Fully Local Manus AI. No APIs, No $200 monthly bills. Enjoy an autonomous agent that"
+      },
+      {
+        "name": "WeKnora",
+        "source": "github",
+        "lane": "RAG & Knowle",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 6.1,
+          "rev": 4.6,
+          "tkn": 4,
+          "wht": 6.03,
+          "edg": 6.03
+        },
+        "avg": 6.03,
+        "url": "https://github.com/Tencent/WeKnora",
+        "desc": "Lane: RAG & Knowledge + Foundation Models"
+      },
+      {
+        "name": "openai-agents-python",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 7,
+          "rev": 4.6,
+          "tkn": 3,
+          "wht": 6,
+          "edg": 6
+        },
+        "avg": 6,
+        "url": "https://github.com/openai/openai-agents-python",
+        "desc": "Lane: AI Agents + Foundation Models"
+      },
+      {
+        "name": "voltagent",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.2,
+          "agt": 5.2,
+          "rev": 5.8,
+          "tkn": 3,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/VoltAgent/voltagent",
+        "desc": "Research: AI Agents, RAG & Knowledge"
+      },
+      {
+        "name": "byterover-cli",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 7.4,
+          "agt": 5.2,
+          "rev": 4.6,
+          "tkn": 6,
+          "wht": 5.8,
+          "edg": 5.8
+        },
+        "avg": 5.8,
+        "url": "https://github.com/campfirein/byterover-cli",
+        "desc": "Lane: AI Agents + RAG & Knowledge"
+      },
+      {
+        "name": "mcp-use",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 9.2,
+          "agt": 7,
+          "rev": 5.8,
+          "tkn": 1,
+          "wht": 5.75,
+          "edg": 5.75
+        },
+        "avg": 5.75,
+        "url": "https://github.com/mcp-use/mcp-use",
+        "desc": "Lane: Foundation Models + AI Agents"
+      },
+      {
+        "name": "MemMachine",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "BUILD",
+        "scores": {
+          "mkt": 8,
+          "agt": 7,
+          "rev": 4,
+          "tkn": 4,
+          "wht": 5.75,
+          "edg": 5.75
+        },
+        "avg": 5.75,
+        "url": "https://github.com/MemMachine/MemMachine",
+        "desc": "Lane: AI Agents + RAG & Knowledge"
+      },
+      {
+        "name": "osaurus",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 7.4,
+          "agt": 7.9,
+          "rev": 4.6,
+          "tkn": 2,
+          "wht": 5.47,
+          "edg": 5.47
+        },
+        "avg": 5.47,
+        "url": "https://github.com/osaurus-ai/osaurus",
+        "desc": "Own your AI. The native macOS harness for AI agents -- any model, persistent memory,"
+      },
+      {
+        "name": "ralph",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 9,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 3,
+          "wht": 5.3,
+          "edg": 5.3
+        },
+        "avg": 5.3,
+        "url": "https://github.com/snarktank/ralph",
+        "desc": "Ralph is an autonomous AI agent loop that runs repeatedly until all PRD items are com"
+      },
+      {
+        "name": "graphify",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 8,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 4,
+          "wht": 5.3,
+          "edg": 5.3
+        },
+        "avg": 5.3,
+        "desc": "Lane: Foundation Models + RAG & Knowledge",
+        "url": "https://github.com/safishamsi/graphify"
+      },
+      {
+        "name": "agentic-ai-prompt-research",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 7,
+          "agt": 5.2,
+          "rev": 4,
+          "tkn": 5,
+          "wht": 5.3,
+          "edg": 5.3
+        },
+        "avg": 5.3,
+        "url": "https://github.com/Leonxlnx/agentic-ai-prompt-research",
+        "desc": "Research into how agentic AI coding assistants work — reconstructed prompt patterns,"
+      },
+      {
+        "name": "Open-AutoGLM",
+        "source": "github",
+        "lane": "AI Agents",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 9.4,
+          "agt": 6.1,
+          "rev": 4.6,
+          "tkn": 1,
+          "wht": 5.28,
+          "edg": 5.28
+        },
+        "avg": 5.28,
+        "url": "https://github.com/zai-org/Open-AutoGLM",
+        "desc": "An Open Phone Agent Model & Framework. Unlocking the AI Phone for Everyone"
+      },
+      {
+        "name": "koog",
+        "source": "github",
+        "lane": "Foundation M",
+        "verdict": "MONITOR",
+        "scores": {
+          "mkt": 8.6,
+          "agt": 6.1,
+          "rev": 6.4,
+          "tkn": 0,
+          "wht": 5.28,
+          "edg": 5.28
+        },
+        "avg": 5.28,
+        "desc": "Lane: Foundation Models + AI Agents",
+        "url": "https://github.com/JetBrains/koog"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-06",
+    "verdict": "UNKNOWN",
+    "signals": []
+  },
+  {
+    "date": "2026-04-05",
+    "verdict": "UNKNOWN",
+    "signals": []
+  },
+  {
+    "date": "2026-04-04",
+    "verdict": "UNKNOWN",
+    "signals": []
+  },
+  {
+    "date": "2026-04-03",
+    "verdict": "UNKNOWN",
+    "signals": []
   }
 ]
